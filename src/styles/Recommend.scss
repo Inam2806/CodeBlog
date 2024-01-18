@@ -1,0 +1,59 @@
+.recommendations-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    @media (max-width: 768px) {
+        justify-content: center; // Center-align items on smaller screens
+    }
+}
+
+.article-card {
+    width: 22%;
+    margin: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        width: 100%; // Make article cards full width on smaller screens
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    h3 {
+        font-size: 1.2em;
+        margin-bottom: 10px;
+    }
+
+    a {
+        display: inline-block;
+        background-color: #333;
+        color: white;
+        padding: 8px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #555;
+        }
+    }
+}
+
+.recommended_1 {
+    background-color: #ffffff;
+
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        color: black;
+    }
+
+    @media (max-width: 768px) {
+        padding: 10px; // Adjust padding for smaller screens
+    }
+}

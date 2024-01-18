@@ -1,0 +1,81 @@
+.footer_1 {
+    background: #000000;
+    color: #fff;
+    padding: 20px 0;
+    @media (max-width: 768px) {
+        padding: 15px 0; // Adjust padding for smaller screens
+    }
+}
+
+/* Styles for the footer container */
+.footer-container_1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column; // Stack items vertically on smaller screens
+        text-align: center; // Center-align content
+    }
+}
+
+/* Styles for footer buttons */
+.footer-buttons_1 {
+    display: flex;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        margin-top: 10px; // Add some space between buttons on smaller screens
+    }
+}
+
+.black-button_1 {
+    background: #2a2a2a;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+
+    @media (max-width: 768px) {
+        width: 100%; // Make buttons full width on smaller screens
+    }
+}
+
+.black-button_1:hover {
+    background: #333;
+}
+
+/* Styles for social media icons */
+.social-media_1 {
+    display: inline-flex;
+    gap: 10px;
+
+    @media (max-width: 768px) {
+        margin-top: 10px; // Add some space between social media icons on smaller screens
+    }
+}
+
+.social-media_1 a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.social-media_1 a:hover {
+    color: #00bcd4;
+}
+
+/* Styles for copyright text */
+.copyright_1 {
+    text-align: center;
+    font-size: 14px;
+
+    @media (max-width: 768px) {
+        margin-top: 10px; // Add some space between copyright text on smaller screens
+    }
+}

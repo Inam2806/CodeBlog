@@ -1,0 +1,62 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+footer {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive Design */
+
+/* Mobile-first styles */
+@media only screen and (min-width: 600px) {
+
+    /* Tablet styles */
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* Landscape tablet and small laptop styles */
+    body {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* Desktop styles */
+    body {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,95 @@
+// Navbar.scss
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar.navbar-expand-lg.navbar-light>img {
+    width: 200px;
+    padding: 0 8px;
+}
+
+.background {
+    background-color: white;
+}
+
+.navbar.navbar-expand-lg.navbar-light {
+    text-align: center;
+    background: rgb(0, 0, 0);
+    height: 100px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar-light .navbar-nav.ml-auto .navbar-nav {
+    display: inline-flex;
+    list-style: none;
+    
+}
+.navbar.navbar-expand-lg.navbar-light .item {
+    width: 150px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar.navbar-expand-lg.navbar-light .nav-link{
+    text-decoration: none;
+    color: rgb(241, 241, 241);
+}
+
+.navbar.navbar-expand-lg.navbar-light .navbar-toggler-icon {
+    background-color: rgb(76, 76, 76);
+    padding: 10px;
+    border-color: rgb(23, 23, 23);
+    border-radius: 5px;
+}
+
+.active,
+.navbar-light .navbar-nav.ml-auto .item:hover {
+    background: rgb(23, 23, 23);
+    border-radius: 3px;
+}
+
+.navbar-light .fa {
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 1100px) {
+    body {
+        background-color: rgb(61, 61, 61);
+    }
+        .navbar-collapse {
+            background-color: rgba(0, 0, 0, 0.8);
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            width: 200px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+        }
+        .navbar-nav {
+            width: 100%;
+        }
+        .item {
+            width: 100%;
+            margin: 10px 0;
+        }
+}
+
+.nav-link {
+    color: #fff;
+}
+
+
