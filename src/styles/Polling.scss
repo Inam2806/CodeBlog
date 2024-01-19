@@ -38,35 +38,43 @@
         }
     }
 
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 767px) {
         .polling-section {
-            padding: 10px;  // Adjust padding for smaller screens
-            margin-bottom: 10px;  // Adjust margin for smaller screens
+            padding: 10px; // Adjust padding for smaller screens
+            margin-bottom: 10px; // Adjust margin for smaller screens
 
             h2 {
-                font-size: 18px;  // Adjust font size for smaller screens
+                font-size: 18px; // Adjust font size for smaller screens
             }
 
             form {
+
+                // Add the missing form selector
                 label {
-                    margin-bottom: 8px;  // Adjust margin for smaller screens
+                    margin-bottom: 8px; // Adjust margin for smaller screens
 
                     input {
-                        margin-right: 3px;  // Adjust margin for smaller screens
+                        margin-right: 3px; // Adjust margin for smaller screens
                     }
                 }
 
                 button {
-                    padding: 8px;  // Adjust padding for smaller screens
+                    padding: 8px; // Adjust padding for smaller screens
                 }
             }
         }
     }
-}
-.percentage-labels {
-    margin-top: 50px;
-    .browser-matrix {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+
+    .percentage-labels {
+        margin-top: 50px;
+
+        .browser-matrix {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }

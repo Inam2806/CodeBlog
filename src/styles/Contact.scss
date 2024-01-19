@@ -164,22 +164,45 @@ background-size: cover;
 }
 
 /* Media query for smaller screens */
-@media (max-width: 991px) {
-  .contact {
-    padding: 50px;
-  }
+.contact {
+  // Common styles for larger screens
 
-  .container_contact {
-    flex-direction: column;
-  }
+  @media (max-width: 768px) {
+    // Styles specific to screens smaller than or equal to 768px
 
-  .container_contact .contactinfro {
-    margin-bottom: 40px;
-  }
+    .container_contact {
+      flex-direction: column;
+      align-items: center;
 
-  .container_contact,
-  .contactinfro {
-    width: 100%;
+      .contactinfro,
+      .contactform {
+        width: 100%;
+      }
+
+      .contactinfro {
+        margin-bottom: 20px;
+
+        .box {
+          margin-bottom: 15px;
+        }
+
+        .social-icons {
+          margin-top: 20px;
+        }
+      }
+
+      .contactform {
+        .inputBox {
+          width: 100%;
+
+          label,
+          input,
+          textarea {
+            width: 100%;
+          }
+        }
+      }
+    }
   }
 }
 

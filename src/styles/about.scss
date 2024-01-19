@@ -415,3 +415,97 @@ nav .fas {
 .none {
   text-decoration: none;
 }
+// Import any shared styles or variables if needed
+
+#header {
+  // Styles for larger screens
+
+  @media (max-width: 768px) {
+    // Styles specific to screens smaller than or equal to 768px
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-text {
+      text-align: center;
+    }
+
+    .header-text-1 {
+      margin-top: 10px;
+    }
+  }
+}
+
+#About {
+  // Styles for larger screens
+
+  @media (max-width: 768px) {
+    // Styles specific to screens smaller than or equal to 768px
+
+    .row {
+      flex-direction: column;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+      width: 100%;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    .tab-titles {
+      text-align: center;
+    }
+  }
+}
+
+#Portfolio {
+  // Styles for larger screens
+
+  @media (max-width: 768px) {
+    // Styles specific to screens smaller than or equal to 768px
+
+    .work-list {
+      display: flex;
+      flex-direction: column;
+
+      .work {
+        margin-bottom: 20px;
+        img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; // Adjust the max-height as needed
+          }
+      }
+    }
+  }
+}
+
+#Contact {
+  // Styles for larger screens
+
+  @media (max-width: 768px) {
+    // Styles specific to screens smaller than or equal to 768px
+
+    .row {
+      flex-direction: column;
+
+      .contact-left,
+      .contact-right {
+        width: 100%;
+        text-align: center;
+      }
+
+      .contact-right {
+        margin-top: 20px;
+      }
+    }
+  }
+}
