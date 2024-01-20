@@ -13,6 +13,7 @@ import Blogger2 from './Blogger2';
 import Blogger3 from './Blogger3';
 import Blogger4 from './Blogger4';
 import TermsAndConditions from './TermAndCondition';
+import Privacy from './Privacy';
 
 const App = () => {
     return (
@@ -29,6 +30,7 @@ const App = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/TermAndCondition" element={<TermsAndConditions />} />
+                     <Route path="/Privacy" element={<Privacy />} />
                 </Routes>
               
                <Footer/>

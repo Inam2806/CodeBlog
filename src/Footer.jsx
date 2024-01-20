@@ -26,6 +26,9 @@ const Footer = ({ isFooterVisible }) => {
           </Link>
       <Link to={`/TermAndCondition`}  onClick={scrollToTop} rel="noopener noreferrer">
     <button className="black-button_1" >Term & Conditions</button>
+          </Link>
+           <Link to={`/Privacy`}  onClick={scrollToTop} rel="noopener noreferrer">
+    <button className="black-button_1" >Privacy</button>
   </Link>
 </div>
     <div className="social-media_1">

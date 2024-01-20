@@ -38,37 +38,32 @@ const Contact = () => {
         </div>
         <div className="contactform">
           <form
-            action="mailto:inamulhaque952@gmail.com"
-            method="post"
-            encType="text/plain"
-          >
+                    action="mailto:inamulhaque952@gmail.com"
+                    method="post"
+                    encType="text/plain"
+                >
+                    
+                    
+                    
+                   
+   
+        
             <div className="inputBox">
               <label style={{ color: 'black' }}>Your Name:</label>
-              <input
-                type="text"
-                name="Your Name"
-                value=""
-                              required
-                              style={{ backgroundColor: 'white', color: 'black' }}
-              />
+              <input type="text" name="Name" placeholder="Your Name" required style={{ backgroundColor: 'white', color: 'black' }}/>
             </div>
             <div className="inputBox">
               <div className="inputBox">
   <label style={{ color: 'black' }}>Your Email:</label>
-  <input 
-    type="email"
-    name="Your Email"
-    value=""
-    required
-    style={{ backgroundColor: 'white', color: 'black' }}
-  />
+  <input type="email" name="Email" placeholder="Your Email" required style={{ backgroundColor: 'white', color: 'black' }}/>
 </div>
 
             </div>
             <div className="inputBox">
               <label style={{ color: 'black' }}>Your Message:</label>
-              <br />
-              <textarea name="Your Message" required style={{ backgroundColor: 'white', color: 'black' }}></textarea>
+            
+            <textarea name="Message" rows="6" placeholder="Your Message" style={{ backgroundColor: 'white', color: 'black' }}></textarea>
+              
             </div>
             <div className="inputBox">
               <input type="submit" />

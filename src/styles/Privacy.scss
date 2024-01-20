@@ -1,6 +1,5 @@
+.privacycontainer {
 
-.terms-and-conditions {
-   
     margin: 0 auto;
     padding: 20px;
     /* Add padding for content */
@@ -9,18 +8,20 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     /* Add a subtle box shadow for depth */
     border-radius: 8px;
+
     /* Add rounded corners for a modern look */
-    .boxtac {
-            margin-top: 30px;
-            left: 0;
-            top: 0;
-            margin-left: 200px;
-            width: 800px;
-            padding: 20px; // Adjust as needed
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
+    .container_blog {
+        margin-top: 30px;
+        left: 0;
+        top: 0;
+        margin-left: 200px;
+        width: 800px;
+        padding: 20px; // Adjust as needed
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
     h1 {
         font-size: 2em;
         margin-bottom: 1em;
@@ -33,7 +34,7 @@
     }
 
     h2 {
-        
+
         font-size: 1.5em;
         margin-top: 1.5em;
         margin-bottom: 1em;
@@ -60,7 +61,8 @@
         /* Add underline to links */
         cursor: pointer;
     }
-    .contacttac{
+
+    .contacttac {
         text-decoration: none;
     }
 
