@@ -224,14 +224,14 @@ const Blogger1 = () => {
             </p>
             
           <div className="browser-list">  
-          <h3><strong>1. Google Chrome<img src={t1} alt=''/></strong></h3>
+          <h3><strong>1. Google Chrome<img className='browserx' src={t1} alt=''/></strong></h3>
           <ul>
             <li>Known for speed and efficiency</li>
             <li>Clean and user-friendly interface</li>
             <li>Extensive ecosystem of extensions</li>
             <li><strong>Supported OS:</strong> Windows, macOS, Linux, Android, iOS</li>
               </ul>      
-          <h3><strong>2. Mozilla Firefox<img src={t2} alt=''/></strong></h3>
+          <h3><strong>2. Mozilla Firefox<img className='browserx' src={t2} alt=''/></strong></h3>
           <ul>
             <li>Emphasizes user privacy</li>
             <li>Open-source platform</li>
@@ -240,7 +240,7 @@ const Blogger1 = () => {
             <li>Can be used offline for uninterrupted browsing</li>
             <li><strong>Supported OS:</strong> Windows, macOS, Linux, Android, iOS</li>
           </ul>
-          <h3><strong>3. Microsoft Edge<img src={t3} alt=''/></strong></h3>
+          <h3><strong>3. Microsoft Edge<img className='browserx' src={t3} alt=''/></strong></h3>
           <ul>
             <li>Collects significantly less data</li>
             <li>Tracker blocker independent of website behavior</li>
@@ -249,21 +249,21 @@ const Blogger1 = () => {
             <li><strong>Supported OS:</strong> Windows, macOS, Android, iOS</li>
           </ul>
         
- <h3> <strong>4. Safari<img src={t4} alt=''/></strong></h3>
+ <h3> <strong>4. Safari<img className='browserx' src={t4} alt=''/></strong></h3>
   <ul>
     <li>Designed for macOS and iOS integration</li>
     <li>Energy-efficient</li>
     <li>Smooth browsing experience within the Apple ecosystem</li>
     <li><strong>Supported OS:</strong> macOS, iOS</li>
   </ul>
-  <h3><strong>5. Opera<img src={t5} alt=''/></strong></h3>
+  <h3><strong>5. Opera<img className='browserx' src={t5} alt=''/></strong></h3>
   <ul>
     <li>Built-in ad-blocker</li>
     <li>Free VPN for enhanced security</li>
     <li>Snapshot tool for capturing web content</li>
     <li><strong>Supported OS:</strong> Windows, macOS, Linux, Android, iOS</li>
   </ul>
-  <h3><strong>6. Brave Browser<img src={t6} alt=''/></strong></h3>
+  <h3><strong>6. Brave Browser<img className='browserx' src={t6} alt=''/></strong></h3>
   <ul>
     <li>Blocks privacy-invading ads & trackers by default.</li>
     <li>Less content to load on each webpage for faster loading.</li>
@@ -271,14 +271,14 @@ const Blogger1 = () => {
     <li>Enhances online safety by blocking intrusive elements.</li>
     <li><strong>Supported OS:</strong> Windows, macOS, Linux, Android, iOS</li>
   </ul>
- <h3> <strong>7. Vivaldi<img src={t7} alt=''/></strong></h3>
+ <h3> <strong>7. Vivaldi<img className='browserx' src={t7} alt=''/></strong></h3>
   <ul>
     <li>Highly customizable</li>
     <li>Designed for power users</li>
     <li>Offers extensive features for personalization</li>
     <li><strong>Supported OS:</strong> Windows, macOS, Linux</li>
   </ul>
-  <h3><strong>8. Tor Browser<img src={t8} alt=''/></strong></h3>
+  <h3><strong>8. Tor Browser<img className='browserx' src={t8} alt=''/></strong></h3>
   <ul>
     <li>Focus on privacy and anonymity</li>
     <li>Routes traffic through the Tor network</li>

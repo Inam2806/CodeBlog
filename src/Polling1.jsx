@@ -139,35 +139,35 @@ const chartData = {
       <form id="browserPollForm">
         <label>
           <input type="radio" name="browserPreference" value="Chrome" />
-          Google Chrome<img src={t1} alt=''/>
+          Google Chrome<img className='browserx' src={t1} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Firefox" />
-          Mozilla Firefox<img src={t2} alt=''/>
+          Mozilla Firefox<img className='browserx' src={t2} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Edge" />
-          Microsoft Edge<img src={t3} alt=''/>
+          Microsoft Edge<img className='browserx' src={t3} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Safari" />
-          Safari<img src={t4} alt=''/>
+          Safari<img className='browserx' src={t4} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Opera" />
-          Opera<img src={t5} alt=''/>
+          Opera<img className='browserx' src={t5} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Brave" />
-          Brave Browser<img src={t6} alt=''/>
+          Brave Browser<img className='browserx' src={t6} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Vivaldi" />
-          Vivaldi<img src={t7} alt=''/>
+          Vivaldi<img className='browserx' src={t7} alt=''/>
         </label>
         <label>
           <input type="radio" name="browserPreference" value="Tor" />
-          Tor Browser<img src={t8} alt=''/>
+          Tor Browser<img className='browserx' src={t8} alt=''/>
               </label>
         <label>
           <input

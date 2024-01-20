@@ -1,11 +1,16 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Swiper from 'swiper';
-import LazyLoad from 'react-lazyload';
 import './styles/Blogger.scss';
 import a from './images/Article_1.jpg';
-import t from './images/t.jpg';
+import t1 from './images/1.jpg';
+import t2 from './images/2.jpg';
+import t3 from './images/3.jpg';
+import t4 from './images/4.jpg';
+import t5 from './images/5.jpg';
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
+
+
 
 const Blogger = () => {
   const swiperContainer = useRef(null);
@@ -105,13 +110,13 @@ const Blogger = () => {
 
         <div ref={swiperContainer} className="swiper-container">
           <div className="swiper-wrapper">
-            {[t, t, t, t, t, t].map((image, index) => (
+            {[t1, t2, t3, t4, t5].map((image, index) => (
               <div key={index} className="swiper-slide">
-                <LazyLoad height={200} offset={100}>
+                
                   <a href={image} onClick={handleImageClick}>
                     <img src={image} alt="" />
                   </a>
-                </LazyLoad>
+                
               </div>
             ))}
           </div>
@@ -164,6 +169,7 @@ const Blogger = () => {
               ))}
         </div>
       </div>
+ 
     </div>
   );
 };

@@ -1,0 +1,82 @@
+
+.terms-and-conditions {
+   
+    margin: 0 auto;
+    padding: 20px;
+    /* Add padding for content */
+    background-color: #fff;
+    /* Set background color to white */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Add a subtle box shadow for depth */
+    border-radius: 8px;
+    /* Add rounded corners for a modern look */
+    .boxtac {
+            margin-top: 30px;
+            left: 0;
+            top: 0;
+            margin-left: 200px;
+            width: 1000px;
+            padding: 20px; // Adjust as needed
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 1em;
+        color: #000000;
+        /* Set heading color */
+        border-bottom: 2px solid #ccc;
+        /* Add a bottom border for separation */
+        padding-bottom: 0.5em;
+        /* Adjust spacing for better visual appeal */
+    }
+
+    h2 {
+        
+        font-size: 1.5em;
+        margin-top: 1.5em;
+        margin-bottom: 1em;
+        color: #000000;
+        /* Set subheading color */
+    }
+
+    h4 {
+        font-family: 'Times New Roman', Times, serif;
+        margin-bottom: 1em;
+        color: #000000;
+        /* Set paragraph text color */
+    }
+
+    section {
+        margin-bottom: 2em;
+        /* Add spacing between sections */
+    }
+
+    a {
+        color: #007bff;
+        /* Set link color */
+        text-decoration: underline;
+        /* Add underline to links */
+        cursor: pointer;
+    }
+    .contacttac{
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: #0056b3;
+        /* Change link color on hover */
+    }
+
+    /* Customize other elements as needed */
+
+    @media screen and (max-width: 600px) {
+
+        /* Add responsive styles for smaller screens */
+        .terms-and-conditions {
+            padding: 10px;
+            /* Adjust padding for smaller screens */
+        }
+    }
+}
