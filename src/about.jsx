@@ -150,9 +150,7 @@ return (
             </div>
         </div>
     </div>
-    <div className="copyright">
-        <p>@Inam Ul Haque <i className="fas fa-heart"></i> </p>
-    </div>
+
 </div>
 
    

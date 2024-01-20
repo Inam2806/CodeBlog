@@ -13,7 +13,7 @@ const scrollToTop = () => {
   <div class="recommendations-container">
     <div class="article-card">
       <img src={t} alt="Article 1"/>
-      <h3>Article 1</h3>
+      <h3>Top Software Trends 2024</h3>
       <Link to={`/Blogger2`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>

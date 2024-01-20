@@ -9,9 +9,6 @@ import t4 from './images/4.jpg';
 import t5 from './images/5.jpg';
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
-
-
-
 const Blogger = () => {
   const swiperContainer = useRef(null);
   const swiperInstance = useRef(null);
@@ -92,7 +89,7 @@ const Blogger = () => {
  const recommendedArticles = [
     // Your recommended articles data
     { image: a, title: 'The 8 Best Internet Browsers in 2023', link: '/Blogger1' },
-    { image: a, title: 'Article 2', link: '/Blogger2' },
+    { image: a, title: 'Top Software Trends 2024', link: '/Blogger2' },
     { image: a, title: 'Article 3', link: '/Blogger3' },
     { image: a, title: 'Article 4', link: '/Blogger4' },
   ];

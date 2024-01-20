@@ -38,7 +38,7 @@ const Footer = ({ isFooterVisible }) => {
                     <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-linkedin"></i></a>
     </div>
   </div>
-  <p className="copyright_1">© Copyright Inam Ul Haque 2023</p>
+  <p className="copyright_1">© Copyright Inam Ul Haque <i className="fas fa-heart"></i> 2023</p>
 </footer>
   );
 };
