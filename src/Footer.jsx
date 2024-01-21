@@ -9,9 +9,9 @@ const Footer = ({ isFooterVisible }) => {
   window.scrollTo(0, 0);
   };
   const footerStyle = {
-    zIndex: isFooterVisible ? 0 : 100, // Set z-index to 100 when footer is visible, 0 otherwise
-    position: 'absolute', // Position the footer at the bottom of the container
-    width: '100%', // Make sure the footer spans the entire width
+  
+
+
   };
 
   return (

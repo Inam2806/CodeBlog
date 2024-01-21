@@ -37,7 +37,9 @@ const handlePollButtonClick = () => {
   // Check if the user has already submitted the form
   const submittedUsers = JSON.parse(localStorage.getItem('submittedUsers')) || [];
   if (submittedUsers.includes(userEmail)) {
-    alert("You have already submitted the form. You can try again later.");
+     setChartVisible(true);
+    alert("You have already submitted the form. Please try again after 2 months. You can view the results below.");
+
     return;
   }
 
