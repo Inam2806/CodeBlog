@@ -33,7 +33,7 @@ const Privacy = () => {
             or other information that the visitor sends via their browser.
           </h2>
 
-          {/* Add more sections as needed */}
+          <h2>add more content</h2>
         </section>
       </div>
     </div>
