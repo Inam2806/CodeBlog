@@ -4,12 +4,9 @@ import './styles/Privacy.scss';
 const Privacy = () => {
   return (
     <div className="privacycontainer">
-      <div className="container_blog">
+      <div className="containerblogP">
         <header className='heading'>
-          <center>
-            <div className="main_h">Privacy Policy</div>
-            <h3 className="main_h2">Your Privacy Matters</h3>
-          </center>
+              <center><h1>Welcome to CodeBlog! Privacy Policy</h1></center>
         </header>
 
         <section className="privacy-content">
@@ -33,7 +30,7 @@ const Privacy = () => {
             or other information that the visitor sends via their browser.
           </h2>
 
-          <h2>add more content</h2>
+       
         </section>
       </div>
     </div>

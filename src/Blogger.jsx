@@ -16,7 +16,6 @@ import './styles/Search.scss';
 
 
 
-
 const Blogger = () => {
   const swiperContainer = useRef(null);
   const swiperInstance = useRef(null);
@@ -107,14 +106,14 @@ const Blogger = () => {
     { image: a, title: 'Top Software Trends 2024', link: '/Blogger2' },
     { image: a, title: 'Article 3', link: '/Blogger3' },
     { image: a, title: 'Article 4', link: '/Blogger4' },
-    { image: t1, title: 'Tech Innovations of the Decade', link: '/Blogger5' },
-    { image: t2, title: 'Discovering New Frontiers in Space Exploration', link: '/Blogger6' },
-    { image: t3, title: 'The Rise of Artificial Intelligence', link: '/Blogger7' },
-    { image: t4, title: 'Exploring Sustainable Energy Solutions', link: '/Blogger8' },
-    { image: t5, title: 'Future of Virtual Reality and Augmented Reality', link: '/Blogger9' },
-    { image: t5, title: 'Future of Virtual Reality and Augmented Reality', link: '/Blogger9' },
-    { image: t5, title: 'Future of Virtual Reality and Augmented Reality', link: '/Blogger9' },
-    { image: t5, title: 'Future of Virtual Reality and Augmented Reality', link: '/Blogger9' },
+    { image: t1, title: 'Article 5', link: '/Blogger5' },
+    { image: t2, title: 'Article 6', link: '/Blogger6' },
+    { image: t3, title: 'Article 7', link: '/Blogger7' },
+    { image: t4, title: 'Article 8', link: '/Blogger8' },
+    { image: t5, title: 'Article 9', link: '/Blogger9' },
+    { image: t5, title: 'Article 10', link: '/Blogger10' },
+    { image: t5, title: 'Article 11', link: '/Blogger11' },
+    { image: t5, title: 'Article 12', link: '/Blogger12' },
     // Add more articles as needed
   ];
    const techArticles = [
@@ -130,15 +129,23 @@ const Blogger = () => {
 
   return (
     <div className='main_blog'>
-      <div className="container_blog">
-        {/* ... (rest of the component remains unchanged) */}
+       <div className="container_blog">
+        <header className='heading'>
+          <center>
+            <div className="main_h">Welcome to My Blog</div>
+            <h3 className="main_h2">Explore Interesting Topics and Insights!</h3>
+          </center>
+        </header>
+
         <div ref={swiperContainer} className="swiper-container">
-        <div className="swiper-wrapper">
-            {[...recommendedArticles, ...techArticles, ...eduArticles].map((article, index) => (
+          <div className="swiper-wrapper">
+            {[t1, t2, t3, t4, t5].map((image, index) => (
               <div key={index} className="swiper-slide">
-                <a href={article.image} onClick={handleImageClick}>
-                  <img src={article.image} alt="" />
-                </a>
+                
+                  <a href={image} onClick={handleImageClick}>
+                    <img src={image} alt="" />
+                  </a>
+                
               </div>
             ))}
           </div>
@@ -157,7 +164,6 @@ const Blogger = () => {
         />
         <button onClick={handleSearch}>Search</button>
       </div>
-
 
       <div className='recommended_1'>
         <center><h2>Recommended Articles</h2></center> 
@@ -211,7 +217,6 @@ const Blogger = () => {
   </div>
 </div>
 
-
        <div className='education-section'>
   <h2>Education</h2>
   <div className='article-card-container'>
@@ -237,3 +242,4 @@ const Blogger = () => {
 };
 
 export default Blogger;
+
