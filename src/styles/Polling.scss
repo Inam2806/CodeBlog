@@ -21,11 +21,14 @@
                     margin-right: 5px;
                 }
             }
-
+            .submtipoll{
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
             button {
-                background-color: #007bff;
-                color: #fff;
-                padding: 10px;
+                background-color: #172918;
+                color: #f8f8f8;
+                padding: 10px;  
                 border: none;
                 border-radius: 4px;
                 cursor: pointer;
@@ -77,4 +80,9 @@
             margin: 0;
         }
     }
+}
+
+.Signinbutton{
+    margin-bottom: 10px;
+   
 }

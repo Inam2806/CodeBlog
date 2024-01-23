@@ -13,9 +13,10 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-background: url(contact.jpg);
+background: rgb(35, 34, 34);
 background-size: cover;
-
+border-top: #ccc solid 2px;
+border-bottom: #ccc solid 2px;
   /* Light gray background */
 }
 
@@ -23,7 +24,7 @@ background-size: cover;
 .contact .content {
   max-width: 800px;
   text-align: center;
-  color: #333;
+
   /* Dark text color */
 }
 
@@ -63,7 +64,7 @@ background-size: cover;
   align-items: center;
   border-radius: 50%;
   font-size: 22px;
-  color: #333;
+  color: #000000;
   /* Dark text color */
 }
 
@@ -72,7 +73,7 @@ background-size: cover;
   display: flex;
   margin-left: 20px;
   font-size: 16px;
-  color: #333;
+  color: #ffffff;
   flex-direction: column;
   font-weight: 300;
 }
@@ -80,7 +81,7 @@ background-size: cover;
 /* Styles for heading in text */
 .container_contact .contactinfro .box .text h3 {
   font-weight: 500;
-  color: #000000;
+  color: #ffffff;
 }
 
 /* Styles for contact form */
@@ -96,7 +97,7 @@ background-size: cover;
 /* Styles for heading in contact form */
 .contactform h2 {
   font-size: 30px;
-  color: #333;
+  color: #ffffff;
   font-weight: 500;
   margin-bottom: 20px;
 }
@@ -131,7 +132,7 @@ background-size: cover;
   font-size: 14px;
   background: #fff;
   /* White background for labels */
-  color: #666;
+  color: #ffffff;
   transition: 0.3s;
 }
 
@@ -215,7 +216,7 @@ background-size: cover;
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: #333;
+  color: #ffffff;
   display: inline-block;
   transition: color 0.5s, transform 0.5s;
 }

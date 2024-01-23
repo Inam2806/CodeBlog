@@ -2,17 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import Swiper from 'swiper';
 import './styles/Blogger.scss';
 import a from './images/Article_1.jpg';
-import t1 from './images/1.jpg';
-import t2 from './images/2.jpg';
-import t3 from './images/3.jpg';
-import t4 from './images/4.jpg';
-import t5 from './images/5.jpg';
-import tech1 from './images/1.jpg';
-import tech2 from './images/2.jpg';
-import edu1 from './images/3.jpg';
-import edu2 from './images/4.jpg';
+import t1 from './images/a.jpg';
+import t2 from './images/b.jpg';
+import t3 from './images/c.jpg';
+import t4 from './images/d.jpg';
+import t5 from './images/e.jpg';
+import tech1 from './images/Tech_1.jpg';
+import tech2 from './images/Tech_2.jpg';
+import edu1 from './images/a.jpg';
+import edu2 from './images/b.jpg';
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
+
 
 
 
@@ -32,6 +33,7 @@ const Blogger = () => {
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
+        
       });
 
       const nextButton = document.querySelector('.custom-next-button');
@@ -143,7 +145,7 @@ const Blogger = () => {
               <div key={index} className="swiper-slide">
                 
                   <a href={image} onClick={handleImageClick}>
-                    <img src={image} alt="" />
+                    <img className='imageslider' src={image} alt="" />
                   </a>
                 
               </div>
@@ -202,7 +204,7 @@ const Blogger = () => {
   <h2>Technology</h2>
   <div className='article-card-container'>
     {techArticles.map((article, index) => (
-      <div key={index} className='article-card'>
+      <div key={index} className='article-card-rec'>
         <img src={article.image} alt={article.title} />
         <h3>
           <center>
@@ -221,7 +223,7 @@ const Blogger = () => {
   <h2>Education</h2>
   <div className='article-card-container'>
     {eduArticles.map((article, index) => (
-      <div key={index} className='article-card'>
+      <div key={index} className='article-card-rec'>
         <img src={article.image} alt={article.title} />
         <h3>
           <center>

@@ -9,6 +9,12 @@ import t6 from './images/brave.jpg';
 import t7 from './images/Vivaldi.jpg';
 import t8 from './images/Tor.jpg.png';
 import { Pie } from 'react-chartjs-2';
+
+import { signInWithPopup, GoogleAuthProvider } from 'firebase/auth';
+import { signOut, onAuthStateChanged } from 'firebase/auth';
+
+import { auth} from './firebase';
+
 const Polling = () => {
   const ownerEmail = 'inamulhaque952@gmail.com'; // Replace with the actual owner's email address
   const [pollResults, setPollResults] = useState(() => {
@@ -33,70 +39,72 @@ const Polling = () => {
     localStorage.setItem('pollResults', JSON.stringify(pollResults));
   }, [pollResults]);
 
-const handlePollButtonClick = () => {
-  // Check if the user has already submitted the form
-  const submittedUsers = JSON.parse(localStorage.getItem('submittedUsers')) || [];
-  if (submittedUsers.includes(userEmail)) {
-     setChartVisible(true);
-    alert("You have already submitted the form. Please try again after 2 months. You can view the results below.");
+ const handlePollButtonClick = () => {
+    // Check if the user is signed in
+    if (!auth.currentUser) {
+      alert("Please sign in with Google before submitting the form.");
+      return;
+    }
 
-    return;
-  }
+    // Check if the user has already submitted the form
+    const submittedUsers = JSON.parse(localStorage.getItem('submittedUsers')) || [];
+    if (submittedUsers.includes(userEmail)) {
+      setChartVisible(true);
+      alert("You have already submitted the form. Please try again after 2 months. You can view the results below.");
+      return;
+    }
 
-  // Get selected browser preference
-  const selectedBrowser = document.querySelector('input[name="browserPreference"]:checked');
+    // Get selected browser preference
+    const selectedBrowser = document.querySelector('input[name="browserPreference"]:checked');
 
-  // Check if the user entered a valid Gmail address
-  const emailPattern = /^[a-zA-Z0-9._-]+@gmail\.com$/;
-  if (!userEmail || !emailPattern.test(userEmail)) {
-    alert("Please enter a valid Gmail address before submitting.");
-    return;
-  }
+    // Check if the user entered a valid Gmail address
+    const emailPattern = /^[a-zA-Z0-9._-]+@gmail\.com$/;
+    if (!userEmail || !emailPattern.test(userEmail)) {
+      alert("Please enter a valid Gmail address before submitting.");
+      return;
+    }
 
-  if (selectedBrowser) {
-    // Update the poll results based on user selection
-    const updatedResults = { ...pollResults, [selectedBrowser.value]: pollResults[selectedBrowser.value] + 1 };
-    setPollResults(updatedResults);
+    if (selectedBrowser) {
+      // Update the poll results based on user selection
+      const updatedResults = { ...pollResults, [selectedBrowser.value]: pollResults[selectedBrowser.value] + 1 };
+      setPollResults(updatedResults);
 
-    // Add the user to the list of submitted users
-    const updatedSubmittedUsers = [...submittedUsers, userEmail];
-    localStorage.setItem('submittedUsers', JSON.stringify(updatedSubmittedUsers));
+      // Add the user to the list of submitted users
+      const updatedSubmittedUsers = [...submittedUsers, userEmail];
+      localStorage.setItem('submittedUsers', JSON.stringify(updatedSubmittedUsers));
 
-    // Show the chart after submitting the form
-    setChartVisible(true);
-  } else {
-    alert("Please select your preferred browser before submitting.");
-  }
-};
-
-
-  const handleResetButtonClick = () => {
-  // Check if the user's email matches the owner's email
-  if (userEmail === ownerEmail) {
-    // Reset the poll results
-    setPollResults({
-      Chrome: 0,
-      Firefox: 0,
-      Edge: 0,
-      Safari: 0,
-      Opera: 0,
-      Brave: 0,
-      Vivaldi: 0,
-      Tor: 0,
-    });
-    // Hide the chart after resetting
-    setChartVisible(false);
-
-    // Clear the list of submitted users
-    localStorage.removeItem('submittedUsers');
-  } else {
-    alert("You are not authorized to reset the poll. Please provide the correct Gmail address.");
-  }
-};
-
-  const handleEmailChange = (e) => {
-    setUserEmail(e.target.value);
+      // Show the chart after submitting the form
+      setChartVisible(true);
+    } else {
+      alert("Please select your preferred browser before submitting.");
+    }
   };
+  
+
+ const handleResetButtonClick = () => {
+    // Check if the user's email matches the owner's email
+    if (userEmail === ownerEmail) {
+      // Reset the poll results
+      setPollResults({
+        Chrome: 0,
+        Firefox: 0,
+        Edge: 0,
+        Safari: 0,
+        Opera: 0,
+        Brave: 0,
+        Vivaldi: 0,
+        Tor: 0,
+      });
+      // Hide the chart after resetting
+      setChartVisible(false);
+
+      // Clear the list of submitted users
+      localStorage.removeItem('submittedUsers');
+    } else {
+      alert("You are not authorized to reset the poll. Please provide the correct Gmail address.");
+    }
+  };
+
 const totalVotes = Object.values(pollResults).reduce((sum, votes) => sum + votes, 0);
 const percentages = Object.values(pollResults).map(votes => ((votes / totalVotes) * 100).toFixed(2));
 
@@ -129,8 +137,37 @@ const chartData = {
       borderWidth: 1,
     },
   ],
-};
+  };
+ const handleGoogleSignIn = async () => {
+    try {
+      if (auth.currentUser) {
+        await signOut(auth);
+        setUserEmail('');
+      } else {
+        const provider = new GoogleAuthProvider();
+        await signInWithPopup(auth, provider);
 
+        const currentUser = auth.currentUser;
+        if (currentUser) {
+          setUserEmail(currentUser.email);
+        }
+      }
+    } catch (error) {
+      console.error('Google Sign-In Error:', error.message);
+    }
+  };
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setUserEmail(user.email);
+      } else {
+        setUserEmail('');
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
   return (
     <div>
       <center><h2><strong>The 8 Best Internet Browsers in 2023</strong></h2></center>
@@ -171,15 +208,12 @@ const chartData = {
           <input type="radio" name="browserPreference" value="Tor" />
           Tor Browser<img className='browserx' src={t8} alt=''/>
               </label>
-        <label>
-          <input
-            type="text"
-            placeholder="Enter your Gmail address"
-            value={userEmail}
-            onChange={handleEmailChange}
-          />
-        </label>
-        <button type="button" onClick={handlePollButtonClick}>
+        
+          <button type="button" onClick={handleGoogleSignIn}>
+            {userEmail ? 'Sign Out' : 'Sign in with Google'}
+          </button>
+       
+        <button className='submtipoll' type="button" onClick={handlePollButtonClick}>
           Submit Poll
         </button>
         {userEmail === ownerEmail && (

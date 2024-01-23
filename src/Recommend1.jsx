@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Recommend.scss';
-import t from './images/t.jpg'
+import t from './images/a.jpg'
 import {Link} from 'react-router-dom';
 
 const Recommend = () => {

@@ -6,34 +6,32 @@ const Contact = () => {
 
   return (
     <section className="contact">
-      <div className="content">
-      </div>
       <div className="container_contact">
         <div className="contactinfro">
           <div className="box">
-            <div className="icon" style={{ color: 'black' }}>
+            <div className="icon" >
               <i className="fa fa-phone" aria-hidden="true"></i>
             </div>
             <div className="text">
              <h3 >Phone</h3>
 
-              <p style={{ color: 'black' }}>8529742747</p>
+              <p >8529742747</p>
             </div>
           </div>
           <div className="box">
-            <div className="icon" style={{ color: 'black' }}>
+            <div className="icon" >
               <i className="fa fa-envelope-o" aria-hidden="true"></i>
             </div>
             <div className="text">
               <h3>Email</h3>
-              <p style={{ color: 'black' }}>inamulhaque952@gmail.com</p>
+              <p >inamulhaque952@gmail.com</p>
             </div>
           </div>
           <div className="social-icons">
-                    <a href="https://www.facebook.com/Inamulhaque2806" target="_blank" rel="noopener noreferrer" style={{color:"Black"}}><i className="fa fa-facebook" ></i></a>
-                    <a href="https://www.instagram.com/inam_ul_haque_" target="_blank" rel="noopener noreferrer" style={{color:"Black"}}><i className="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/InamUl280601 " target="_blank" rel="noopener noreferrer" style={{color:"Black"}}><i className="fa fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" style={{color:"Black"}}><i className="fa fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/Inamulhaque2806" target="_blank" rel="noopener noreferrer" ><i className="fa fa-facebook" ></i></a>
+                    <a href="https://www.instagram.com/inam_ul_haque_" target="_blank" rel="noopener noreferrer" ><i className="fa fa-instagram"></i></a>
+                    <a href="https://twitter.com/InamUl280601 " target="_blank" rel="noopener noreferrer" ><i className="fa fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" ><i className="fa fa-linkedin"></i></a>
           </div>
         </div>
         <div className="contactform">
