@@ -105,8 +105,8 @@ const Blogger = () => {
 
   const recommendedArticles = [
     { image: a, title: 'The 8 Best Internet Browsers in 2023', link: '/Blogger1' },
-    { image: a, title: 'Top Software Trends 2024', link: '/Blogger2' },
-    { image: a, title: 'Article 3', link: '/Blogger3' },
+    { image: a, title: 'Best Software Trends 2023', link: '/Blogger2' },
+    { image: a, title: 'Best Mobile under Rs 20,000 in 2023', link: '/Blogger3' },
     { image: a, title: 'Article 4', link: '/Blogger4' },
     { image: t1, title: 'Article 5', link: '/Blogger5' },
     { image: t2, title: 'Article 6', link: '/Blogger6' },
