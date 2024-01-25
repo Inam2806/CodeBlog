@@ -30,16 +30,12 @@ const Contact = () => {
           <div className="social-icons">
                     <a href="https://www.facebook.com/Inamulhaque2806" target="_blank" rel="noopener noreferrer" ><i className="fa fa-facebook" ></i></a>
                     <a href="https://www.instagram.com/inam_ul_haque_" target="_blank" rel="noopener noreferrer" ><i className="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/InamUl280601 " target="_blank" rel="noopener noreferrer" ><i className="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/Inam2806 " target="_blank" rel="noopener noreferrer" ><i className="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" ><i className="fa fa-linkedin"></i></a>
           </div>
         </div>
         <div className="contactform">
-          <form
-                    action="mailto:inamulhaque952@gmail.com"
-                    method="post"
-                    encType="text/plain"
-                >
+          <form action="https://formspree.io/f/meqyezna" method="POST">
                     
                     
                     

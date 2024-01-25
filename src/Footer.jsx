@@ -8,14 +8,10 @@ const Footer = ({ isFooterVisible }) => {
   const scrollToTop = () => {
   window.scrollTo(0, 0);
   };
-  const footerStyle = {
-  
 
-
-  };
 
   return (
-    <footer className="footer_1" style={footerStyle}>
+    <footer className="footer_1" >
       <div className="footer-container_1">
        <div className="footer-buttons_1">
   <Link to={`/Contact`} onClick={scrollToTop} rel="noopener noreferrer">
@@ -34,7 +30,7 @@ const Footer = ({ isFooterVisible }) => {
     <div className="social-media_1">
                     <a href="https://www.facebook.com/Inamulhaque2806" target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-facebook"></i></a>
                     <a href="https://www.instagram.com/inam_ul_haque_" target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/InamUl280601 " target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/Inam2806" target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" style={{ color: 'White' }}><i className="fa fa-linkedin"></i></a>
     </div>
   </div>

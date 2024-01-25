@@ -132,16 +132,12 @@ return (
                 <div className="social-icons">
                     <a href="https://www.facebook.com/Inamulhaque2806" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><i className="fa fa-facebook"></i></a>
                     <a href="https://www.instagram.com/inam_ul_haque_" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><i className="fa fa-instagram"></i></a>
-                    <a href="https://twitter.com/InamUl280601 " target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><i className="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/Inam2806 " target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><i className="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/in/inamul-haque-3844a81a0/" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}><i className="fa fa-linkedin"></i></a>
                 </div>
             </div>
             <div className="contact-right">
-                <form
-                    action="mailto:inamulhaque952@gmail.com"
-                    method="post"
-                    encType="text/plain"
-                >
+                <form action="https://formspree.io/f/meqyezna" method="POST">
                     <input type="text" name="Name" placeholder="Your Name" required />
                     <input type="email" name="Email" placeholder="Your Email" required />
                     <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
