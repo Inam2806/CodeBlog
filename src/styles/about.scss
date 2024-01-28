@@ -72,8 +72,8 @@ nav ul li a:hover::after {
 h1{
   font-family: 'Times New Roman', Times, serif;
 }
-.header-text-1 h1{
-  font-size: 40px;
+.header-text-1 p{
+  font-size: 50px;
   margin: 0 auto 10px auto;
   background-image: linear-gradient(to right,
       #07ff24,
@@ -90,8 +90,11 @@ h1{
 
   // Add standard background-clip property
   background-clip: text;
-
   font-family: serif;
+  @media only screen and (max-width: 768px){
+    font-size: 40px;
+    margin: 0;
+  }
   /* If you want to change font-family, do it here */
 }
 

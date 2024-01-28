@@ -1,0 +1,81 @@
+.scrollable-section {
+    display: flex;
+    position: relative;
+    /* Add relative positioning */
+}
+
+.Tech1right-section-1 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: auto;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Use RGBA with alpha less than 1 for transparency */
+    padding-top: 100px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        color: rgb(0, 0, 0);
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: 4px solid white;
+    }
+}
+
+
+.right-section-2 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-bottom: 1px solid white;
+}
+
+.right-section-2 li {
+    margin-bottom: 10px;
+
+    a {
+        color: rgb(0, 0, 0);
+
+        &:hover {
+            color: aqua;
+            text-decoration: none;
+        }
+    }
+}
+
+.content {
+    margin-right: 220px;
+    padding: 20px;
+}
+
+/* For larger screens */
+
+.content {
+    padding: 20px;
+    width: 100%;
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 767px) {
+    .Tech1right-section-1 {
+        position: static;
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding-top: 0;
+        padding: 0;
+    }
+
+    .right-section-2 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .right-section-2 li {
+        margin-bottom: 10px;
+    }
+}

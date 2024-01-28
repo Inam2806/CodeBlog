@@ -8,13 +8,15 @@ import About from './about';
 import Contact from './Contact';
 import 'font-awesome/css/font-awesome.min.css';
 import Footer from './Footer';
-import Blogger1 from './Blogger1'; 
-import Blogger2 from './Blogger2';
-import Blogger3 from './Blogger3';
-import Blogger4 from './Blogger4';
+import Blogger1 from './blogger1'; 
+import Blogger2 from './blogger2';
+import Blogger3 from './blogger3';
+import Blogger4 from './blogger4';
 import TermsAndConditions from './TermAndCondition';
 import Privacy from './Privacy';
-
+import Education1 from './edu1';
+import Movies1 from './Movies1';
+import Techn1 from './Techn1';
 const App = () => {
     return (
         <Router>
@@ -22,10 +24,13 @@ const App = () => {
                 <NavBar />
                 <Routes>
                     <Route path="/" element={<Blogger />} />
-                    <Route path="/Blogger1" element={<Blogger1 />} />
-                    <Route path="/Blogger2" element={<Blogger2 />} />
-                    <Route path="/Blogger3" element={<Blogger3 />} />
+                    <Route path="/The-8-Best-Internet-Browsers-in-2023" element={<Blogger1 />} />
+                    <Route path="/Best-Software-Trends-2023" element={<Blogger2 />} />
+                    <Route path="/Best-Mobile-under-Rs-20,000-in-2023" element={<Blogger3 />} />
                     <Route path="/Blogger4" element={<Blogger4 />} />
+                    <Route path='/How-to-download-Visual-Studio-for-C++' element={<Education1 />} />
+                       <Route path='/Best-Drama-Movies' element={<Movies1 />} />
+                 <Route path='/Best-AI-Tool/Website-used-in-daily-life-in-2023' element={<Techn1 />} />
                     
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />

@@ -45,83 +45,75 @@
     /* If you want to change font-family, do it here */
 }
 .swiper-container {
-    width: 100%; // Make the slider take up the full width available
-    max-width: 100%; // Set max-width to 100% for full-width slider
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    overflow: hidden;
+
     .swiper-wrapper {
         display: flex;
         transition-property: transform;
-     
     }
+
     .swiper-slide {
-        width: 700px;
+        width: 100%;
         box-sizing: border-box;
         background-color: #f0f0f0;
         border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        /* Adjust for variable height content */
+
         img {
             width: 100%;
-            height: 500px;
+            /* Take full width of the .swiper-slide */
+            height: 600px;
+            /* Set a fixed height for the images in pixels */
+            object-fit: cover;
             border-radius: 5px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            transition: opacity 0.3s ease; // Add a smooth transition
+            transition: opacity 0.3s ease;
         }
-
-        // &:hover {
-        //     img {
-
-        //         transform: translateY(-10px);
-        //             text-decoration: none;
-        //     }
-        // }
     }
 
     .swiper-button-next,
     .swiper-button-prev {
-
-    
-        
-       
         padding: 10px;
-        margin: 0 10px;
         z-index: 2;
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 40px;
-            height: 40px;
-            background-color: #fff;
-            color: #000;
-            border: 1px solid #fff;
-            border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #fff;
+        border-radius: 50%;
+
         &:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
     }
 
-    .custom-next-button {
-        right: -10px; // Adjust the distance from the right side of the screen
-    }
-
-    .custom-prev-button {
-        left: -10px; // Adjust the distance from the left side of the screen
-    }
-
-        @media screen and (max-width: 768px) {
+    @media screen and (max-width: 768px) {
         .swiper-slide {
-
-            width: 100%;
+            img {
+                height: 350px;
+                width: 100%;
+                /* Allow height to adjust for mobile screens */
+            }
         }
-        .swiper-container{
-                width: 100%; // Make the slider take up the full width available
-                max-width: 100%;
-                
+
+        .swiper-button-next,
+        .swiper-button-prev {
+            width: 20px;
+            height: 20px;
+            font-size: 14px;
+            top: 60%;
         }
     }
 }
-
-
-
 .article_p {
     margin-top: 30px;
     left: 0;
@@ -162,7 +154,7 @@
         width: 20px;
     }
     
-    ul li {
+    .scrollable-section_blog_1 ul li {
         font-family: Arial, Helvetica, sans-serif;
     }
 
@@ -247,12 +239,12 @@ table {
     /* Adjust as needed */
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    
     margin: 0 auto;
     /* Center the section horizontally */
     margin-bottom: 20px;
     border-bottom: 1px solid rgb(0, 0, 0);
-
+    
     @media (min-width: 768px) {
         display: none;
     }
@@ -327,3 +319,14 @@ img {
                    }
 }
 
+
+.recommended_1{
+    h2{
+        margin-top: 20px;
+        border-top: #000 dotted 1px;
+    }
+    strong{
+        font-family: 'Times New Roman', Times, serif;
+        border-bottom: #000 solid 2px;
+    }
+}

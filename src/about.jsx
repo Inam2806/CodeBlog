@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import React from 'react';
 import './styles/about.scss';
 import work_1 from './images/work-1.png';
 import work_2 from './images/work-2.png';
@@ -6,9 +6,6 @@ import work_3 from './images/work-3_1.png';
 
 import user from './images/user.jpg';
 const About = () => {
-    useEffect(() => {
-        // Your useEffect code here (if any)
-    }, []); // Empty dependency array ensures the effect runs only once on mount
 
     const openTab = (event, tabName) => {
         const tabLinks = document.getElementsByClassName('tab-links');
@@ -33,7 +30,7 @@ return (
       <div className="header-text">
         <p className="profession">Passionate Programmer</p>
                         <div className='header-text-1'>
-          <h1>Hi, I'm <span>Inam ul Haque</span> <br /> a Creative Developer from India</h1>
+          <p >Hi, I'm <span>Inam ul Haque</span> <br /> a Creative Developer from India</p>
         </div>
       </div>
     </nav>

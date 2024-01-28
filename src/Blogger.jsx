@@ -2,15 +2,18 @@ import React, { useEffect, useRef, useState } from 'react';
 import Swiper from 'swiper';
 import './styles/Blogger.scss';
 import a from './images/Article_1.jpg';
+import b from './images/applogo.jpeg';
+import c from './images/mobile.jpg';
 import t1 from './images/a.jpg';
 import t2 from './images/b.jpg';
 import t3 from './images/c.jpg';
 import t4 from './images/d.jpg';
 import t5 from './images/e.jpg';
-import tech1 from './images/Tech_1.jpg';
+import tech1 from './images/Techn.jpg';
 import tech2 from './images/Tech_2.jpg';
-import edu1 from './images/a.jpg';
+import edu1 from './images/Educ.png';
 import edu2 from './images/b.jpg';
+import Movies1 from './images/Movies1.jpg'
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
 
@@ -104,29 +107,26 @@ const Blogger = () => {
   };
 
   const recommendedArticles = [
-    { image: a, title: 'The 8 Best Internet Browsers in 2023', link: '/Blogger1' },
-    { image: a, title: 'Best Software Trends 2023', link: '/Blogger2' },
-    { image: a, title: 'Best Mobile under Rs 20,000 in 2023', link: '/Blogger3' },
-    { image: a, title: 'Article 4', link: '/Blogger4' },
-    { image: t1, title: 'Article 5', link: '/Blogger5' },
-    { image: t2, title: 'Article 6', link: '/Blogger6' },
-    { image: t3, title: 'Article 7', link: '/Blogger7' },
-    { image: t4, title: 'Article 8', link: '/Blogger8' },
-    { image: t5, title: 'Article 9', link: '/Blogger9' },
-    { image: t5, title: 'Article 10', link: '/Blogger10' },
-    { image: t5, title: 'Article 11', link: '/Blogger11' },
-    { image: t5, title: 'Article 12', link: '/Blogger12' },
+    { image: a, title: 'The 8 Best Internet Browsers in 2023', link: '/The-8-Best-Internet-Browsers-in-2023' },
+    { image: b, title: 'Best Software Trends 2023', link: '/Best-Software-Trends-2023' },
+    { image: c, title: 'Best 5G Mobile under Rs 20,000 in 2023', link: '/Best-Mobile-under-Rs-20,000-in-2023' },
+
     // Add more articles as needed
   ];
    const techArticles = [
-    { image: tech1, title: 'Advancements in Artificial Intelligence', link: '/Tech1' },
-    { image: tech2, title: 'The Future of Quantum Computing', link: '/Tech2' },
+    { image: tech1, title: 'Best AI Tool/Website used in daily life in 2023', link: '/Best-AI-Tool/Website-used-in-daily-life-in-2023' },
+    { image: tech2, title: 'The Future of Quantum Computing', link: '/Blogger1' },
     // Add more technology articles as needed
   ];
     const eduArticles = [
-    { image: edu1, title: 'Innovative Teaching Methods for the Digital Age', link: '/Edu1' },
-    { image: edu2, title: 'The Role of Technology in Education', link: '/Edu2' },
+    { image: edu1, title: 'How to download Visual Studio for C++', link: '/How-to-download-Visual-Studio-for-C++' },
+    { image: edu2, title: 'The Role of Technology in Education', link: '/Blogger1' },
     // Add more education articles as needed
+  ];
+  const MoviesArticles = [
+    { image: Movies1, title: 'Best Drama Movies', link: '/Best-Drama-Movies' },
+    { image: tech2, title: 'Best Action Movies', link: '/Blogger1' },
+    // Add more technology articles as needed
   ];
 
   return (
@@ -143,7 +143,6 @@ const Blogger = () => {
           <div className="swiper-wrapper">
             {[t1, t2, t3, t4, t5].map((image, index) => (
               <div key={index} className="swiper-slide">
-                
                   <a href={image} onClick={handleImageClick}>
                     <img className='imageslider' src={image} alt="" />
                   </a>
@@ -168,7 +167,7 @@ const Blogger = () => {
       </div>
 
       <div className='recommended_1'>
-        <center><h2>Recommended Articles</h2></center> 
+        <center><h2><strong>Recommended Articles</strong></h2></center> 
         <div class='recommendations-container'>
          
           {filteredArticles.length > 0
@@ -200,9 +199,9 @@ const Blogger = () => {
               ))}
         </div>
 
-       <div className='technology-section'>
-  <h2>Technology</h2>
-  <div className='article-card-container'>
+       <div className='technology-section '>
+<center>  <h2><strong>Technology</strong></h2></center>
+  <div className='article-card-container recommendations-container'>
     {techArticles.map((article, index) => (
       <div key={index} className='article-card-rec'>
         <img src={article.image} alt={article.title} />
@@ -220,9 +219,28 @@ const Blogger = () => {
 </div>
 
        <div className='education-section'>
-  <h2>Education</h2>
-  <div className='article-card-container'>
+  <center><h2><strong>Education</strong></h2></center>
+  <div className='article-card-container recommendations-container'>
     {eduArticles.map((article, index) => (
+      <div key={index} className='article-card-rec'>
+        <img src={article.image} alt={article.title} />
+        <h3>
+          <center>
+            <strong>{article.title}</strong>
+          </center>
+        </h3>
+        <Link to={article.link} onClick={scrollToTop} rel='noopener noreferrer'>
+          Read more
+        </Link>
+      </div>
+    ))}
+  </div>
+        </div>
+        <div className='movies-section'>
+           <center><h2><strong>Movies</strong></h2></center>
+
+  <div className='article-card-container recommendations-container'>
+    {MoviesArticles.map((article, index) => (
       <div key={index} className='article-card-rec'>
         <img src={article.image} alt={article.title} />
         <h3>

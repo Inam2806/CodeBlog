@@ -58,11 +58,7 @@ const Polling = () => {
     const selectedBrowser = document.querySelector('input[name="browserPreference"]:checked');
 
     // Check if the user entered a valid Gmail address
-    const emailPattern = /^[a-zA-Z0-9._-]+@gmail\.com$/;
-    if (!userEmail || !emailPattern.test(userEmail)) {
-      alert("Please enter a valid Gmail address before submitting.");
-      return;
-    }
+
 
     if (selectedBrowser) {
       // Update the poll results based on user selection

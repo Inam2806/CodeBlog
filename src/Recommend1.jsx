@@ -13,15 +13,15 @@ const scrollToTop = () => {
   <div class="recommendations-container">
     <div class="article-card">
       <img src={t} alt="Article 1"/>
-      <h3>Top Software Trends 2024</h3>
-      <Link to={`/Blogger2`} onClick={scrollToTop} rel="noopener noreferrer">
+      <h3>Top Software Trends 2023</h3>
+      <Link to={`/Best-Software-Trends-2023`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>
     </div>
     <div class="article-card">
       <img  src={t}  alt="Article 2"/> 
-      <h3>Article 2</h3>
-      <Link to={`/Blogger3`} onClick={scrollToTop} rel="noopener noreferrer">
+      <h3>Best 5G Mobile under Rs 20,000 in 2023</h3>
+      <Link to={`/Best-Mobile-under-Rs-20,000-in-2023`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>
     </div>

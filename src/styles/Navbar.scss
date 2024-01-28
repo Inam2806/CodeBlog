@@ -5,13 +5,7 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-    font-size: 15px;
-    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box; // Added box-sizing to handle padding and borders properly
 }
 
 .navbar.navbar-expand-lg.navbar-light>img {
@@ -23,18 +17,19 @@ body {
     background-color: white;
 }
 
-.navbar.navbar-expand-lg.navbar-light {
+.navbar {
     text-align: center;
     background: rgb(0, 0, 0);
     height: 100px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 99;
 }
 
-.navbar-light .navbar-nav.ml-auto .navbar-nav {
+.navbar-light .navbar-nav.ml-auto {
     display: inline-flex;
     list-style: none;
-    
 }
+
 .navbar.navbar-expand-lg.navbar-light .item {
     width: 150px;
     margin: 15px;
@@ -42,13 +37,13 @@ body {
     text-align: center;
 }
 
-.navbar.navbar-expand-lg.navbar-light .nav-link{
+.navbar.navbar-expand-lg.navbar-light .nav-link {
     text-decoration: none;
     color: rgb(241, 241, 241);
 }
 
 .navbar.navbar-expand-lg.navbar-light .navbar-toggler-icon {
-    background-color: rgb(76, 76, 76);
+    background-color: rgb(113, 113, 113);
     padding: 10px;
     border-color: rgb(23, 23, 23);
     border-radius: 5px;
@@ -68,6 +63,34 @@ body {
     body {
         background-color: rgb(61, 61, 61);
     }
+
+    .navbar-collapse {
+        background-color: rgba(0, 0, 0, 0.8);
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        padding: 10px;
+    }
+
+    .navbar-nav {
+        width: 100%;
+    }
+
+    .item {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+            background-color: rgb(61, 61, 61);
+        }
+    
         .navbar-collapse {
             background-color: rgba(0, 0, 0, 0.8);
             border: 1px solid #ccc;
@@ -75,21 +98,22 @@ body {
             position: absolute;
             top: 100%;
             right: 0;
+            box-sizing: border-box;
             width: 200px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
             padding: 10px;
         }
+    
         .navbar-nav {
             width: 100%;
         }
+    
         .item {
             width: 100%;
             margin: 10px 0;
         }
-}
+    }
 
 .nav-link {
     color: #fff;
 }
-
-

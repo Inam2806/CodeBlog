@@ -24,3 +24,31 @@
         color: aqua;
     }
 }
+ .main_blog3 {
+     border-bottom: #000 solid 2px;
+   
+    font-family: 'Times New Roman', Times, serif;
+    .mainblog31{
+        font-family: 'Times New Roman', Times, serif;
+    }
+    
+    }
+    .main_blog3:hover {
+            color: rgb(255, 255, 255);
+        }
+
+.amazon-link {
+    color: #3498db;
+    /* Set link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make the link bold */
+    transition: color 0.3s;
+    /* Add a smooth color transition on hover */
+}
+
+.amazon-link:hover {
+    color: #1e6bd8;
+    /* Change color on hover */
+}
