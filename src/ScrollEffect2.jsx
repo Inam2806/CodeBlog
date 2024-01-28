@@ -47,7 +47,7 @@ const YourComponent = () => {
 
   return (
     <div className={`scrollable-section_Scroll ${showScrollableSection ? '' : 'hidden'}`}>
-      {window.innerWidth > 767 && showScrollableSection && (
+      {window.innerWidth > 1100 && showScrollableSection && (
         <div className="right-section-1">
           <div className="rectangle">
             <h2>Table of Contents</h2>

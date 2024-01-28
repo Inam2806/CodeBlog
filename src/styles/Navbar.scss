@@ -23,6 +23,9 @@
     height: 100px;
     font-family: 'Times New Roman', Times, serif;
     z-index: 99;
+    max-width: 120%; // Set a max-width to prevent it from going beyond the screen
+        margin-left: auto; // Center the navbar
+        margin-right: auto;
 }
 
 .navbar-light .navbar-nav.ml-auto {
@@ -64,6 +67,10 @@
         background-color: rgb(61, 61, 61);
     }
 
+    .navbar {
+        max-width: 100%; // Adjust as needed for smaller screens
+    }
+
     .navbar-collapse {
         background-color: rgba(0, 0, 0, 0.8);
         border: 1px solid #ccc;
@@ -85,34 +92,6 @@
         margin: 10px 0;
     }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    body {
-            background-color: rgb(61, 61, 61);
-        }
-    
-        .navbar-collapse {
-            background-color: rgba(0, 0, 0, 0.8);
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            box-sizing: border-box;
-            width: 200px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-            padding: 10px;
-        }
-    
-        .navbar-nav {
-            width: 100%;
-        }
-    
-        .item {
-            width: 100%;
-            margin: 10px 0;
-        }
-    }
 
 .nav-link {
     color: #fff;

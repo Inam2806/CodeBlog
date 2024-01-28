@@ -6,7 +6,7 @@ import './styles/Blogger.scss';
 import Shawshank from './images/shawshank.jpg';
 import Godfather from './images/Godfather.jpg';
 import './styles/Movies1.scss';
-
+import MovingDots2 from './movingdot2';
 
   
 
@@ -14,10 +14,11 @@ const Movies1 = () => {
   
   return (
     <div className='main_blog'>
+      <MovingDots2/> 
           <section className="blogpost2 scrollable-section">
-             
-       
-              <div className='article_p'>
+           
+        <div className='article_p'>
+          
                    <h1><center><strong>Best Drama Movies</strong></center></h1>
                   <div id='Movies' className='Dramamovies'>
                     <h5><strong>1) Shawshank redemption</strong></h5>
