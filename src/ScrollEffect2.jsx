@@ -6,7 +6,7 @@ const YourComponent = () => {
   const [showScrollableSection, setShowScrollableSection] = useState(true);
 
   useEffect(() => {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 1100) {
       $(function () {
         var rightSection = $('.right-section-1');
         var scrollableSection = $('.blogpost2');

@@ -147,7 +147,7 @@ const Blogger1 = () => {
       </p>
     </div>
             <h2>Browser Rankings in 2023</h2>
-<table>
+<table className="browsertable" >
   <thead>
     <tr>
       <th>Rank</th>

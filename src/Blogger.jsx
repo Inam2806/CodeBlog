@@ -4,6 +4,7 @@ import './styles/Blogger.scss';
 import a from './images/Article_1.jpg';
 import b from './images/applogo.jpeg';
 import c from './images/mobile.jpg';
+import d from './images/laptop.jpg';
 import t1 from './images/a.jpg';
 import t2 from './images/b.jpg';
 import t3 from './images/c.jpg';
@@ -16,6 +17,7 @@ import edu2 from './images/b.jpg';
 import Movies1 from './images/Movies1.jpg'
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
+
 
 
 
@@ -107,25 +109,26 @@ const Blogger = () => {
   };
 
   const recommendedArticles = [
-    { image: a, title: 'The 8 Best Internet Browsers in 2023', link: '/The-8-Best-Internet-Browsers-in-2023' },
+    { image: a, title: 'Best Internet Browsers in 2023', link: '/Best-Internet-Browsers-in-2023' },
     { image: b, title: 'Best Software Trends 2023', link: '/Best-Software-Trends-2023' },
-    { image: c, title: 'Best 5G Mobile under Rs 20,000 in 2023', link: '/Best-Mobile-under-Rs-20,000-in-2023' },
+    { image: c, title: 'Best 5G Mobile under Rs 20,000 in 2023', link: '/Best-Mobile-under-20000-in-2023' },
+    { image: d, title: 'Best Gaming Laptop 2023', link: '/Best-Gaming-Laptop' },
 
     // Add more articles as needed
   ];
    const techArticles = [
     { image: tech1, title: 'Best AI Tool/Website used in daily life in 2023', link: '/Best-AI-Tool/Website-used-in-daily-life-in-2023' },
-    { image: tech2, title: 'The Future of Quantum Computing', link: '/Blogger1' },
+    { image: tech2, title: 'The Future of Quantum Computing', link: '/Blogger5' },
     // Add more technology articles as needed
   ];
     const eduArticles = [
     { image: edu1, title: 'How to download Visual Studio for C++', link: '/How-to-download-Visual-Studio-for-C++' },
-    { image: edu2, title: 'The Role of Technology in Education', link: '/Blogger1' },
+    { image: edu2, title: 'The Role of Technology in Education', link: '/Blogger5' },
     // Add more education articles as needed
   ];
   const MoviesArticles = [
     { image: Movies1, title: 'Best Drama Movies', link: '/Best-Drama-Movies' },
-    { image: tech2, title: 'Best Action Movies', link: '/Blogger1' },
+    { image: tech2, title: 'Best Action Movies', link: '/Blogger5' },
     // Add more technology articles as needed
   ];
 

@@ -1,54 +1,46 @@
-.image-container {
-    position: relative;
-    display: inline-block;
-    margin-bottom: 20px;
-}
+.comparsionmobile {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 
-/* Style for the image */
-.image-container img {
-    border-radius: 50%;
-    border: 2px solid #000;
-    transition: transform 0.3s ease-in-out;
-    height: 30px;
-    width: 30px;
+    thead {
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
 
-}
+    tr,
+    td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
 
-/* Hover effect */
-.image-container:hover img {
-    transform: scale(1.1);   /* You can adjust the scale factor */
-}
-.linkamazon{
-    color: black;
-    &:hover{
-        color: aqua;
-    }
-}
- .main_blog3 {
-     border-bottom: #000 solid 2px;
-   
-    font-family: 'Times New Roman', Times, serif;
-    .mainblog31{
-        font-family: 'Times New Roman', Times, serif;
-    }
-    
-    }
-    .main_blog3:hover {
-            color: rgb(255, 255, 255);
+    tbody {
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
         }
+    }
 
-.amazon-link {
-    color: #3498db;
-    /* Set link color */
-    text-decoration: none;
-    /* Remove underline */
-    font-weight: bold;
-    /* Make the link bold */
-    transition: color 0.3s;
-    /* Add a smooth color transition on hover */
-}
+    tbody tr:hover {
+        background-color: #e0f2f1;
+    }
+ @media only screen and (max-width: 767px) {
+th,
+    td {
+        padding: 4px;
+        /* Adjust the padding for smaller screens */
+        font-size: 12px;
+        /* Adjust the font size for smaller screens */
+    }
 
-.amazon-link:hover {
-    color: #1e6bd8;
-    /* Change color on hover */
+    tbody tr:nth-child(even) {
+        background-color: #f5f5f5;
+        /* Adjust the background color for even rows on smaller screens */
+    }
+
+    tbody tr:hover {
+        background-color: #d3e3f1;
+        /* Adjust the background color for hovered rows on smaller screens */
+    }
 }
+ }

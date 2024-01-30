@@ -103,7 +103,7 @@ const Blogger3 = () => {
           </div>  
           
       <div id='comparison_table' className="comparison-table">
-      <table>
+      <table className="comparsionmobile">
         <thead>
           <tr>
             <th>Feature</th>

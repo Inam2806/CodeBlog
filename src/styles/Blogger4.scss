@@ -1,0 +1,142 @@
+.product-details4 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+
+    .content4 {
+        margin-right: 20px;
+        width: 500px;
+        padding: 20px; // Add padding to create space between content and images
+        z-index: 1; // Ensure content appears above images
+        @media screen and (min-width: 769px) and (max-width: 1100px) {
+                width: 400;
+            }
+        @media screen and (max-width: 768px){
+            width: 300px;
+        }
+    }
+
+    .productimageslaptop {
+        max-width: 40%;
+        height: auto;
+        position: absolute;
+        top: 30%;
+        right: 10%;
+        z-index: 0; // Ensure images appear below content
+
+        @media screen and (max-width: 768px) {
+            top: 30%;
+            right: 0;
+            width: 200px;
+        }
+
+        @media screen and (min-width: 769px) and (max-width: 1100px) {
+            top: 20%;
+            right: 0;
+            max-width: 300px;
+            width: 300px;
+        }
+    }
+
+    h2 {
+        color: #000000;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    ul {
+        list-style-type: disc;
+        padding: 0;
+
+        li {
+            margin-bottom: 5px;
+            font-size: 15px;
+        }
+    }
+
+        @media screen and (min-width: 769px) and (max-width: 1100px) {
+        h2 {
+            font-size: 28px;
+        }
+
+        ul {
+            li {
+                font-size: 15px;
+            }
+        }
+    }
+          @media screen and (max-width: 768px) {
+            h2 {
+                    font-size: 18px;
+                }
+            
+                ul {
+                    li {
+                        font-size: 12px;
+                    }
+                }
+          }
+
+    a {
+        color: #007bff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.comparsionlaptop {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    thead {
+        background-color: #f5f5f5;
+        font-weight: bold;
+    }
+
+    tr,
+    td {
+        padding: 2px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+        font-size: 15px;
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    }
+
+    tbody tr:hover {
+        background-color: #e0f2f1;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .comparsionlaptop {
+
+        th,
+        td {
+            padding: 2px;
+            /* Adjust the padding for smaller screens */
+            font-size: 8px;
+            /* Adjust the font size for smaller screens */
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f5f5f5;
+            /* Adjust the background color for even rows on smaller screens */
+        }
+
+        tbody tr:hover {
+            background-color: #d3e3f1;
+            /* Adjust the background color for hovered rows on smaller screens */
+        }
+
+
+    }
+}

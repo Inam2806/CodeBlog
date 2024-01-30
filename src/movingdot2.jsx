@@ -104,10 +104,9 @@ const MovingDots2 = () => {
             <i class="fas fa-external-link-alt"></i>
         </a>
     </div>
-          </div>
+</div>
           <div class="img3 divanimation">
     <img className='imgsrc' src={afds} alt='' />
-
     <div class="img-layer">
         <h2>Title</h2>
         <p>Description goes here</p>

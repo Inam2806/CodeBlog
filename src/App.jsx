@@ -12,6 +12,7 @@ import Blogger1 from './blogger1';
 import Blogger2 from './blogger2';
 import Blogger3 from './blogger3';
 import Blogger4 from './blogger4';
+import Blogger5 from './Blogger5';
 import TermsAndConditions from './TermAndCondition';
 import Privacy from './Privacy';
 import Education1 from './edu1';
@@ -24,10 +25,11 @@ const App = () => {
                 <NavBar />
                 <Routes>
                     <Route path="/" element={<Blogger />} />
-                    <Route path="/The-8-Best-Internet-Browsers-in-2023" element={<Blogger1 />} />
+                    <Route path="/Best-Internet-Browsers-in-2023" element={<Blogger1 />} />
                     <Route path="/Best-Software-Trends-2023" element={<Blogger2 />} />
-                    <Route path="/Best-Mobile-under-Rs-20,000-in-2023" element={<Blogger3 />} />
-                    <Route path="/Blogger4" element={<Blogger4 />} />
+                    <Route path="/Best-Mobile-under-20000-in-2023" element={<Blogger3 />} />
+                    <Route path="/Best-Gaming-Laptop" element={<Blogger4 />} />
+                     <Route path="/Blogger5" element={<Blogger5 />} />
                     <Route path='/How-to-download-Visual-Studio-for-C++' element={<Education1 />} />
                        <Route path='/Best-Drama-Movies' element={<Movies1 />} />
                  <Route path='/Best-AI-Tool/Website-used-in-daily-life-in-2023' element={<Techn1 />} />

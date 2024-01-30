@@ -6,7 +6,7 @@ const YourComponent = () => {
   const [showScrollableSection, setShowScrollableSection] = useState(true);
 
    useEffect(() => {
-    if (window.innerWidth > 767) {
+    if (window.innerWidth > 1100) {
       $(function () {
         var rightSection = $('.Tech1right-section-1');
         var scrollableSection = $('.Tech1');
@@ -49,7 +49,7 @@ const YourComponent = () => {
 
   return (
     <div className={`scrollable-section_Scroll ${showScrollableSection ? '' : 'hidden'}`}>
-      {window.innerWidth > 767 && showScrollableSection && (
+      {window.innerWidth > 1100 && showScrollableSection && (
         <div className="Tech1right-section-1">
           <div className="rectangle">
             <h2>Table of Contents</h2>
