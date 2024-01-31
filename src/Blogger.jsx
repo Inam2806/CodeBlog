@@ -111,7 +111,7 @@ const Blogger = () => {
   const recommendedArticles = [
     { image: a, title: 'Best Internet Browsers in 2023', link: '/Best-Internet-Browsers-in-2023' },
     { image: b, title: 'Best Software Trends 2023', link: '/Best-Software-Trends-2023' },
-    { image: c, title: 'Best 5G Mobile under Rs 20,000 in 2023', link: '/Best-Mobile-under-20000-in-2023' },
+    { image: c, title: 'Best 5G Mobile under 20,000 in 2023', link: '/Best-Mobile-under-20000-in-2023' },
     { image: d, title: 'Best Gaming Laptop 2023', link: '/Best-Gaming-Laptop' },
 
     // Add more articles as needed

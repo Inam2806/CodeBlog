@@ -24,7 +24,7 @@ const scrollToTop = () => {
     </div>
     <div class="article-card">
       <img  src={c}  alt="Article 2"/> 
-      <h3>Best 5G Mobile under Rs 20,000 in 2023</h3>
+      <h3>Best 5G Mobile under 20,000 in 2023</h3>
       <Link to={`/Best-Mobile-under-20000-in-2023`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>
