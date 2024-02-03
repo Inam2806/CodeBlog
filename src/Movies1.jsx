@@ -3,10 +3,14 @@ import React from 'react';
 import 'swiper/swiper-bundle.css';
 
 import './styles/Blogger.scss';
-import Shawshank from './images/shawshank.jpg';
-import Godfather from './images/Godfather.jpg';
+import a from './images/shawshank.jpg';
+import b from './images/Godfather.jpg';
+import c from './images/schindler.jpg';
+import d from './images/forrest_gump_still.jpg';
+import e from './images/inception.jpg';
+import f from './images/departed.jpg';
 import './styles/Movies1.scss';
-import MovingDots2 from './movingdot2';
+import MovingDots2   from './movingdot1';
 
   
 
@@ -22,7 +26,7 @@ const Movies1 = () => {
                    <h1><center><strong>Best Drama Movies</strong></center></h1>
                   <div id='Movies' className='Dramamovies'>
                     <h5><strong>1) Shawshank redemption</strong></h5>
-     <img src={Shawshank} alt="Shawshank Redemption" className="movie-image" />
+     <img src={a} alt="Shawshank Redemption" className="movie-image" />
     
     <ul>
   <li><strong> Timeless Story:</strong>  The Shawshank Redemption's narrative of hope and friendship resonates across generations.</li>
@@ -40,7 +44,7 @@ const Movies1 = () => {
                     
                       <h5><strong>2) The Godfather (1972)</strong></h5>
                       <ul>
-                           <img src={Godfather} alt="Shawshank Redemption" className="movie-image" />
+                           <img src={b} alt="Shawshank Redemption" className="movie-image" />
   <li><strong>Timeless Story:</strong> Gripping narrative exploring power, loyalty, and consequences of violence.</li>
   <li><strong>Memorable Characters:</strong> Unforgettable performances by Marlon Brando and Al Pacino.</li>
   <li><strong>Message of Hope:</strong> Weaves in hope amid the dark world of organized crime.</li>
@@ -55,7 +59,7 @@ const Movies1 = () => {
 </ul>
  {/* Movie 3: Schindler's List */}
             <h5><strong>3) Schindler's List (1993)</strong></h5>
-            <img src={Shawshank} alt="Schindler's List" className="movie-image" />
+            <img src={c} alt="Schindler's List" className="movie-image" />
             <ul>
               <li><strong>Powerful Narrative:</strong> Tells the true story of Oskar Schindler and his efforts to save Jews during World War II.</li>
               <li><strong>Impactful Performances:</strong> Liam Neeson and Ben Kingsley deliver powerful performances.</li>
@@ -69,7 +73,7 @@ const Movies1 = () => {
 
             {/* Movie 4: Forrest Gump */}
             <h5><strong>4) Forrest Gump (1994)</strong></h5>
-            <img src={Shawshank} alt="Forrest Gump" className="movie-image" />
+            <img src={d} alt="Forrest Gump" className="movie-image" />
             <ul>
               <li><strong>Heartwarming Story:</strong> Follows the extraordinary life of Forrest Gump, played by Tom Hanks.</li>
               <li><strong>Emotional Journey:</strong> Blends humor and drama, taking viewers on an emotional rollercoaster.</li>
@@ -82,7 +86,7 @@ const Movies1 = () => {
             </ul>
              {/* Movie 5: Inception */}
   <h5><strong>5) Inception (2010)</strong></h5>
-  <img src={Shawshank} alt="Inception" className="movie-image" />
+  <img src={e} alt="Inception" className="movie-image" />
   <ul>
     <li><strong>Mind-Bending Plot:</strong> Christopher Nolan's masterpiece with a complex and thought-provoking narrative.</li>
     <li><strong>Visual Spectacle:</strong> Known for its stunning visual effects and mind-bending scenes.</li>
@@ -96,7 +100,7 @@ const Movies1 = () => {
 
   {/* Movie 6: The Shawshank Redemption */}
   <h5><strong>6) The Departed (2006)</strong></h5>
-  <img src={Shawshank} alt="The Departed" className="movie-image" />
+  <img src={f} alt="The Departed" className="movie-image" />
   <ul>
     <li><strong>Intense Crime Drama:</strong> Martin Scorsese's gripping exploration of crime and undercover operations.</li>
     <li><strong>All-Star Cast:</strong> Features Leonardo DiCaprio, Jack Nicholson, and Matt Damon in key roles.</li>

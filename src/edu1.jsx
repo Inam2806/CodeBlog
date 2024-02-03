@@ -49,7 +49,14 @@ const edu1 = () => {
                       </ul>
                       <h3>Add mingw bin folder in the environment variable</h3>
                       <div className="player-wrapper">
-                          <ReactPlayer className="react-player" url="https://youtu.be/NGDn-4kmFD4" width="700px" height="450px" controls={true} />
+                          <ReactPlayer
+  className="react-player"
+  url="https://youtu.be/NGDn-4kmFD4"
+  controls={true}
+  width="100%"
+                height="400px"
+                max-height="500px"
+/>
                       </div>
 
 

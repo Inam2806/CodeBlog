@@ -14,7 +14,9 @@ import tech1 from './images/Techn.jpg';
 import tech2 from './images/Tech_2.jpg';
 import edu1 from './images/Educ.png';
 import edu2 from './images/b.jpg';
-import Movies1 from './images/Movies1.jpg'
+import Movies1 from './images/Movies1.jpg';
+import Movies2 from './images/Movies2.jpg';
+import Movies3 from './images/Movies3.jpg';
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
 
@@ -128,7 +130,8 @@ const Blogger = () => {
   ];
   const MoviesArticles = [
     { image: Movies1, title: 'Best Drama Movies', link: '/Best-Drama-Movies' },
-    { image: tech2, title: 'Best Action Movies', link: '/Blogger5' },
+    { image: Movies2, title: 'Best Action Movies', link: '/Best-Action-Movies' },
+     { image: Movies3, title: 'Best Romantic Movies', link: '/Best-Romantic-Movies' },
     // Add more technology articles as needed
   ];
 

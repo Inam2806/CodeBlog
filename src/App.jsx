@@ -17,6 +17,8 @@ import TermsAndConditions from './TermAndCondition';
 import Privacy from './Privacy';
 import Education1 from './edu1';
 import Movies1 from './Movies1';
+import Movies2 from './Movies2';
+import Movies3 from './Movies3';
 import Techn1 from './Techn1';
 const App = () => {
     return (
@@ -31,7 +33,11 @@ const App = () => {
                     <Route path="/Best-Gaming-Laptop" element={<Blogger4 />} />
                      <Route path="/Blogger5" element={<Blogger5 />} />
                     <Route path='/How-to-download-Visual-Studio-for-C++' element={<Education1 />} />
-                       <Route path='/Best-Drama-Movies' element={<Movies1 />} />
+                    <Route path='/Best-Drama-Movies' element={<Movies1 />} />
+                    <Route path='/Best-Action-Movies' element={<Movies2 />} />
+                     <Route path='/Best-Romantic-Movies' element={<Movies3 />} />
+
+                    
                  <Route path='/Best-AI-Tool/Website-used-in-daily-life-in-2023' element={<Techn1 />} />
                     
                     <Route path="/about" element={<About />} />
