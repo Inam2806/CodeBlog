@@ -1,7 +1,14 @@
-.main_blog{
-    background-color: rgb(252, 252, 252);
-    color: black;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+$primary-color: #3498db; // Blue color
+$secondary-color: #e74c3c; // Red color
+$background-color: #6eb6c8; // Light grey background color
+$text-color: #000000; // Dark grey text color
+$box-shadow-color: rgba(0, 0, 0, 0.1); // Light box shadow color
+
+$dark-text-color: #000000; // Dark grey text color
+.main_blog {
+    background-color: $background-color;
+    color: $text-color;
+    box-shadow: 0 0 20px $box-shadow-color;
 }
 .container_blog {
     width: 100%;
@@ -10,15 +17,50 @@
     flex-direction: column;
     align-items: center;
     padding: 10px 5%;
-    .heading {
+.heading {
+        position: relative;
         font-size: 18px;
         font-weight: bold;
         margin-bottom: 20px;
         border-radius: 8px;
         padding: 20px;
         z-index: 2;
+
         color: rgb(0, 0, 0);
-        box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+            box-shadow: 0 0 20px #1accf8;
+        overflow: hidden;
+    }
+
+    .heading::before,
+    .heading::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+        animation: gradientAnimation 2s infinite;
+    }
+
+    .heading::before {
+        top: 0;
+        left: -100%;
+        animation-delay: 1s;
+    }
+
+    .heading::after {
+        bottom: 0;
+        right: -100%;
+    }
+
+    @keyframes gradientAnimation {
+        0% {
+            transform: translateX(-100%);
+        }
+
+        100% {
+            transform: translateX(100%);
+        }
     }
 }
 .main_h {
@@ -26,15 +68,15 @@
     margin: 0 auto 10px auto;
     font-family: sans-serif;
     background-image: linear-gradient(to right,
-                #1c1c1c,
-                #2f1822,
-                #3f2f4f,
-                #770c58,
-                #e60000,
-                #337b33,
-                #e600e6,
-                #d37e00,
-                #e64d00
+            #1c1c1c,
+            #2f1822,
+            #3f2f4f,
+            #770c58,
+            #e60000,
+            #337b33,
+            #e600e6,
+            #d37e00,
+            #e64d00
             );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -51,7 +93,7 @@
     margin-right: auto;
     position: relative;
     overflow: hidden;
-
+    background-color: $background-color;
     .swiper-wrapper {
         display: flex;
         transition-property: transform;
@@ -87,7 +129,7 @@
         transform: translateY(-50%);
         width: 30px;
         height: 30px;
-        background-color: #fff;
+        background-color: $background-color;
         color: #000;
         border: 1px solid #fff;
         border-radius: 50%;
@@ -121,19 +163,19 @@
     top: 0;
     margin-left: 200px;
     width: 800px;
-    padding: 20px; // Adjust as needed
+    padding: 20px; 
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px $box-shadow-color;
     .Browser1{
         border-top: 2px solid rgb(0, 0, 0);
     }
     a {
-        color: #3498db;
+        color: $primary-color;
         transition: color 0.3s ease;
 
         &:hover {
-            color: #2980b9;
+            color: darken($primary-color, 10%);
             text-decoration: none;
         }
     }
@@ -238,8 +280,8 @@
     /* Set the maximum width */
     padding: 20px;
     /* Adjust as needed */
-    background-color: #fff;
-    border-radius: 8px;
+    background-color: $background-color;
+        border-bottom: 1px solid $text-color;
     
     margin: 0 auto;
     /* Center the section horizontally */
@@ -289,12 +331,13 @@
 .article-card-rec {
     width: 22%;
         margin: 10px;
-        border: 1px solid #ddd;
+        border: 2px solid black;
         padding: 15px;
         box-sizing: border-box;
         @media (max-width: 768px) {
                 width: 100%; // Make article cards full width on smaller screens
             }
+           
 img {
         max-width: 100%;
         height: auto;
@@ -321,13 +364,3 @@ img {
 }
 
 
-.recommended_1{
-    h2{
-        margin-top: 20px;
-        border-top: #000 dotted 1px;
-    }
-    strong{
-        font-family: 'Times New Roman', Times, serif;
-        border-bottom: #000 solid 2px;
-    }
-}

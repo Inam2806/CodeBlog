@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles/Privacy.scss';
+import './styles/mainprivacyandconditions.scss';
 const Privacy = () => {
         const scrollToTop = () => {
   window.scrollTo(0, 0);
   };
   return (
-    <div className="privacycontainer">
+    <div className="maincontainer">
       <div className="containerblogP">
         <header className='heading'>
               <center><h1>Welcome to CodeBlog! Privacy Policy</h1></center>

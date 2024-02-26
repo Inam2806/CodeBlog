@@ -20,6 +20,7 @@ import Movies1 from './Movies1';
 import Movies2 from './Movies2';
 import Movies3 from './Movies3';
 import Techn1 from './Techn1';
+import Techn2 from './Techn2';
 const App = () => {
     return (
         <Router>
@@ -31,6 +32,7 @@ const App = () => {
                     <Route path="/Best-Software-Trends-2023" element={<Blogger2 />} />
                     <Route path="/Best-Mobile-under-20000-in-2023" element={<Blogger3 />} />
                     <Route path="/Best-Gaming-Laptop" element={<Blogger4 />} />
+                    
                      <Route path="/Blogger5" element={<Blogger5 />} />
                     <Route path='/How-to-download-Visual-Studio-for-C++' element={<Education1 />} />
                     <Route path='/Best-Drama-Movies' element={<Movies1 />} />
@@ -39,6 +41,7 @@ const App = () => {
 
                     
                  <Route path='/Best-AI-Tool/Website-used-in-daily-life-in-2023' element={<Techn1 />} />
+                 <Route path="/Tech-Software" element={<Techn2 />} />
                     
                     <Route path="/about" element={<About />} />
                     <Route path="/contact" element={<Contact />} />

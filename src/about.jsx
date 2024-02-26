@@ -47,7 +47,7 @@ return (
             </div>
             <div className="about-col-2">
                 <h1 className="sub-title">About Me</h1>
-                <p>I am currently in the 3rd year, pursuing my B.Tech degree from <a className="none" href="http://nsut.ac.in/">Netaji Subhas University of Technology (NSUT)</a>, Delhi, India.
+                <p>I am currently in the 4th year, pursuing my B.Tech degree from <a className="none" href="http://nsut.ac.in/">Netaji Subhas University of Technology (NSUT)</a>, Delhi, India.
                     <br />
                     I am a student of the Department of Information Technology at NSUT.
                     <br />

@@ -17,7 +17,9 @@ const Tech1 = () => {
       <section className="Tech1 scrollable-section">
        {enableScrollEffect && <Tech1ScrollEffect targetSection=".Tech1" />}
         <div className='article_p' >
+        <center><h1><strong>Best AI Website/Tools</strong></h1></center>
            <div id='OpenAI_Chat_Platform' className="openai-chat-platform">
+           
       <header>
         <h1><strong>1. OpenAI Chat Platform</strong></h1>
         <p>Use -Engage in meaningful conversations with the OpenAI Chat Platform.</p>

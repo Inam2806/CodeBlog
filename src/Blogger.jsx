@@ -19,6 +19,8 @@ import Movies2 from './images/Movies2.jpg';
 import Movies3 from './images/Movies3.jpg';
 import {Link} from 'react-router-dom';
 import './styles/Search.scss';
+import './styles/Recommend.scss';
+
 
 
 
@@ -97,7 +99,7 @@ const Blogger = () => {
 
    const handleSearch = () => {
     // Combine articles from all sections
-    const allArticles = [...recommendedArticles, ...techArticles, ...eduArticles];
+    const allArticles = [...recommendedArticles, ...techArticles, ...eduArticles, ...MoviesArticles];
 
     // Filter articles based on the search term
     const filtered = allArticles.filter((article) =>
@@ -115,13 +117,14 @@ const Blogger = () => {
     { image: b, title: 'Best Software Trends 2023', link: '/Best-Software-Trends-2023' },
     { image: c, title: 'Best 5G Mobile under 20,000 in 2023', link: '/Best-Mobile-under-20000-in-2023' },
     { image: d, title: 'Best Gaming Laptop 2023', link: '/Best-Gaming-Laptop' },
+    
 
     // Add more articles as needed
   ];
    const techArticles = [
     { image: tech1, title: 'Best AI Tool/Website used in daily life in 2023', link: '/Best-AI-Tool/Website-used-in-daily-life-in-2023' },
-    { image: tech2, title: 'The Future of Quantum Computing', link: '/Blogger5' },
-    // Add more technology articles as needed
+    { image: tech2, title: 'Tech Software', link: '/Tech-Software' },
+
   ];
     const eduArticles = [
     { image: edu1, title: 'How to download Visual Studio for C++', link: '/How-to-download-Visual-Studio-for-C++' },
@@ -134,6 +137,9 @@ const Blogger = () => {
      { image: Movies3, title: 'Best Romantic Movies', link: '/Best-Romantic-Movies' },
     // Add more technology articles as needed
   ];
+  // const Website = [
+  //   { image: Movies1, title: 'Best Drama Movies', link: '/Music' },
+  // ];
 
   return (
     <div className='main_blog'>
@@ -174,11 +180,11 @@ const Blogger = () => {
 
       <div className='recommended_1'>
         <center><h2><strong>Recommended Articles</strong></h2></center> 
-        <div class='recommendations-container'>
+        <div class='article-card-container recommendations-container'>
          
           {filteredArticles.length > 0
             ? filteredArticles.map((article, index) => (
-                <div key={index} class='article-card'>
+                <div key={index} class='article-card-rec'>
                   <img src={article.image} alt={article.title} />
                   <h3>
                     <center>
@@ -191,7 +197,7 @@ const Blogger = () => {
                 </div>
               ))
             : recommendedArticles.map((article, index) => (
-                <div key={index} class='article-card'>
+                <div key={index} class='article-card-rec'>
                   <img src={article.image} alt={article.title} />
                   <h3>
                     <center>
@@ -260,6 +266,25 @@ const Blogger = () => {
       </div>
     ))}
   </div>
+        {/* </div>
+        <div className='Website-section'>
+           <center><h2><strong>Movies</strong></h2></center>
+
+  <div className='article-card-container recommendations-container'>
+    {Website.map((article, index) => (
+      <div key={index} className='article-card-rec'>
+        <img src={article.image} alt={article.title} />
+        <h3>
+          <center>
+            <strong>{article.title}</strong>
+          </center>
+        </h3>
+        <Link to={article.link} onClick={scrollToTop} rel='noopener noreferrer'>
+          Read more
+        </Link>
+      </div>
+    ))}
+  </div> */}
 </div>
       </div>
 

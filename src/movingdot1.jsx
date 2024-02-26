@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './styles/movingdot2.scss'; // Import a CSS file for styling
+import './styles/movingdot.scss'; // Import a CSS file for styling
 import a from './images/shawshank.jpg';
 import b from './images/Godfather.jpg';
 import c from './images/schindler.jpg';
@@ -81,89 +81,89 @@ const MovingDots2 = () => {
   return (
     <div className="moving-dots-container">
       {dots.map((dot) => (
-          <div key={dot.id} className="dot" style={{ transform: `translate(${dot.x}px, ${dot.y}px)` }}>
-          
-             
-          </div>
-          
+        <div key={dot.id} className="dot" style={{ transform: `translate(${dot.x}px, ${dot.y}px)` }}>
+
+
+        </div>
+
       ))}
-         <div class="img1 divanimation">
-    <img className='imgsrc' src={a} alt='' />
+      <div class="img1 divanimation">
+        <img className='imgsrc' src={a} alt='' />
 
-    <div class="img-layer">
-        <h3>Shawshank redemption</h3>
-        
-        <a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-          </div>
-          <div class="img2 divanimation">
-    <img className='imgsrc' src={b} alt='' />
+        <div class="img-layer">
+          <h3>Shawshank redemption</h3>
 
-    <div class="img-layer">
-        <h2>The Godfather</h2>
-        <p></p>
-        <a href="https://www.imdb.com/title/tt0068646/?ref_=fn_al_tt_1" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-</div>
-          <div class="img3 divanimation">
-    <img className='imgsrc' src={c} alt='' />
-    <div class="img-layer">
-        <h2>Schindler's List </h2>
-        <p></p>
-        <a href="https://www.imdb.com/title/tt0108052/" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-          </div>
-          <div class="img4 divanimation">
-    <img className='imgsrc' src={d} alt='' />
-
-    <div class="img-layer">
-        <h2>Forrest Gump</h2>
-        <p></p>
-        <a href="https://www.imdb.com/title/tt0109830/" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-          </div>
-          <div class="img5 divanimation">
-    <img className='imgsrc' src={e} alt='' />
-
-    <div class="img-layer">
-        <h2>Inception</h2>
-        <p></p>
-        <a href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">
-            <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
+          </a>
+        </div>
       </div>
-       <div class="img6 divanimation">
-    <img className='imgsrc' src={f} alt='' />
+      <div class="img2 divanimation">
+        <img className='imgsrc' src={b} alt='' />
 
-    <div class="img-layer">
-        <h2>The Departed</h2>
-        <p></p>
-        <a href="https://www.imdb.com/title/tt0407887/" target="_blank" rel="noopener noreferrer">
+        <div class="img-layer">
+          <h2>The Godfather</h2>
+          <p></p>
+          <a href="https://www.imdb.com/title/tt0068646/?ref_=fn_al_tt_1" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
-        </a>
-    </div>
-</div>
+          </a>
+        </div>
+      </div>
+      <div class="img3 divanimation">
+        <img className='imgsrc' src={c} alt='' />
+        <div class="img-layer">
+          <h2>Schindler's List </h2>
+          <p></p>
+          <a href="https://www.imdb.com/title/tt0108052/" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="img4 divanimation">
+        <img className='imgsrc' src={d} alt='' />
+
+        <div class="img-layer">
+          <h2>Forrest Gump</h2>
+          <p></p>
+          <a href="https://www.imdb.com/title/tt0109830/" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="img5 divanimation">
+        <img className='imgsrc' src={e} alt='' />
+
+        <div class="img-layer">
+          <h2>Inception</h2>
+          <p></p>
+          <a href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
+      <div class="img6 divanimation">
+        <img className='imgsrc' src={f} alt='' />
+
+        <div class="img-layer">
+          <h2>The Departed</h2>
+          <p></p>
+          <a href="https://www.imdb.com/title/tt0407887/" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-external-link-alt"></i>
+          </a>
+        </div>
+      </div>
 
 
-         
-          
-         
-          {/* <img className='img6' src={x} alt='' /> */}
-        
 
-         
-          
 
-           
+
+      {/* <img className='img6' src={x} alt='' /> */}
+
+
+
+
+
+
     </div>
   );
 };

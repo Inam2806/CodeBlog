@@ -1,7 +1,7 @@
 import React from 'react';
 import 'swiper/swiper-bundle.css';
 import './styles/Movies1.scss';
-import MovingDots2 from './movingdot1';
+import MovingDots3 from './movingdot3';
 import a from './images/romantic_movie1.jpg';
 import b from './images/romantic_movie2.jpg';
 import c from './images/romantic_movie3.jpg';
@@ -12,7 +12,7 @@ import f from './images/romantic_movie6.jpg';
 const Movies3 = () => {
   return (
     <div className='main_blog'>
-      <MovingDots2 />
+      <MovingDots3 />
       <section className="blogpost2 scrollable-section">
         <div className='article_p'>
           <h1><center><strong>Best Romantic Movies</strong></center></h1>
@@ -76,7 +76,7 @@ const Movies3 = () => {
               <li><strong>IMDb:</strong> <a href="https://www.imdb.com/title/tt0120338/" target="_blank" rel="noopener noreferrer">Titanic</a></li>
             </ul>
 
-            {/* Movie 6 */}
+           
             <h5><strong>6) About Time (2013)</strong></h5>
             <img src={f} alt="About Time" className="movie-image" />
             <ul>

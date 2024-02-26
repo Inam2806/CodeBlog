@@ -15,23 +15,26 @@ const scrollToTop = () => {
      <div class='recommended_1'>
   <center><h2>Recommended Articles</h2></center>
   <div class="recommendations-container">
-    <div class="article-card">
+    <div class="article-card-rec">
       <img src={b} alt="Article 1"/>
-      <h3>Top Software Trends 2023</h3>
+      <center>
+      <h3><strong>Top Software Trends 2023</strong></h3></center>
       <Link to={`/Best-Software-Trends-2023`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>
     </div>
-    <div class="article-card">
+    <div class="article-card-rec">
       <img  src={c}  alt="Article 2"/> 
-      <h3>Best 5G Mobile under 20,000 in 2023</h3>
+        <center>
+      <h3><strong>Best 5G Mobile under 20,000 in 2023</strong></h3></center>
       <Link to={`/Best-Mobile-under-20000-in-2023`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>
     </div>
-    <div class="article-card">
-      <img  src={d}  alt="Article 3"/>
-      <h3>Best Gaming Laptop 2023</h3>
+    <div class="article-card-rec">
+          <img src={d} alt="Article 3" />
+          <center>
+      <h3><strong>Best Gaming Laptop 2023</strong></h3></center>
       <Link to={`/Best-Gaming-Laptop`} onClick={scrollToTop} rel="noopener noreferrer">
   Read more
 </Link>

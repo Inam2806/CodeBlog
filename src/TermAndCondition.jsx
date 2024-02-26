@@ -1,15 +1,16 @@
 // TermsAndConditions.jsx
 
 import React from 'react';
-import './styles/TermsAndConditions.scss';
+import './styles/mainprivacyandconditions.scss';
 import { Link } from 'react-router-dom';
 const TermsAndConditions = () => {
       const scrollToTop = () => {
   window.scrollTo(0, 0);
   };
   return (
-      <div className="terms-and-conditions">
-          <div className='boxtac' >
+      <div className="maincontainer">
+      <div className="containerblogP">
+         
       <center><h1>Welcome to CodeBlog! Terms and Conditions</h1></center>
 
       <section>
@@ -105,6 +106,7 @@ You agree that the original English text shall prevail in the case of a dispute.
      
           </div>
           </div>
+       
   );
 };
 

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './styles/movingdot.scss'; // Import a CSS file for styling
-import a from './images/action_movie1.jpg';
-import b from './images/action_movie2.jpg';
-import c from './images/action_movie3.jpg';
-import d from './images/action_movie4.jpg';
-import e from './images/action_movie5.jpg';
-import f from './images/action_movie6.jpg';
+import a from './images/romantic_movie1.jpg';
+import b from './images/romantic_movie2.jpg';
+import c from './images/romantic_movie3.jpg';
+import d from './images/romantic_movie4.jpg';
+import e from './images/romantic_movie5.jpg';
+import f from './images/romantic_movie6.jpg';
 const MovingDots2 = () => {
   const [dots, setDots] = useState([]);
   const frameRate = 60; // Frames per second
@@ -91,7 +91,7 @@ const MovingDots2 = () => {
     <img className='imgsrc' src={a} alt='' />
 
     <div class="img-layer">
-        <h3>Mad Max: Fury Road </h3>
+        <h3>The Notebook </h3>
         
         <a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
@@ -102,7 +102,7 @@ const MovingDots2 = () => {
     <img className='imgsrc' src={b} alt='' />
 
     <div class="img-layer">
-        <h2>Die Hard</h2>
+        <h2> Pride and Prejudice </h2>
         <p></p>
         <a href="https://www.imdb.com/title/tt0068646/?ref_=fn_al_tt_1" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
@@ -112,7 +112,7 @@ const MovingDots2 = () => {
           <div class="img3 divanimation">
     <img className='imgsrc' src={c} alt='' />
     <div class="img-layer">
-        <h2>The Dark Knight  </h2>
+        <h2>La La Land  </h2>
         <p></p>
         <a href="https://www.imdb.com/title/tt0108052/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
@@ -123,7 +123,7 @@ const MovingDots2 = () => {
     <img className='imgsrc' src={d} alt='' />
 
     <div class="img-layer">
-        <h2> John Wick </h2>
+        <h2>Before Sunrise </h2>
         <p></p>
         <a href="https://www.imdb.com/title/tt0109830/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
@@ -134,7 +134,7 @@ const MovingDots2 = () => {
     <img className='imgsrc' src={e} alt='' />
 
     <div class="img-layer">
-        <h2> Gladiator</h2>
+        <h2> Titanic</h2>
         <p></p>
         <a href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
@@ -145,7 +145,7 @@ const MovingDots2 = () => {
     <img className='imgsrc' src={f} alt='' />
 
     <div class="img-layer">
-        <h2>The Matrix</h2>
+        <h2>About Time</h2>
         <p></p>
         <a href="https://www.imdb.com/title/tt0407887/" target="_blank" rel="noopener noreferrer">
             <i class="fas fa-external-link-alt"></i>
