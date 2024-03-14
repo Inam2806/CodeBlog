@@ -33,74 +33,106 @@ const Blogger3 = () => {
           <li><a className='main_blog3' href="#comparison_table" title="Comparison Table">Comparison Table</a></li>
         </ul>
       </div>
-        <center><h2 id='Best 5G Mobile under Rs 20,000'><strong>Best 5G Mobile under Rs 20,000</strong></h2></center>  
-          <div id='LAVA Agni 2'  className="smartphone-card">
-            <h2>LAVA Agni 2</h2>
-        
-      <ul>
-        <li><strong>Debut:</strong> Released on May 24, 2023.</li>
-        <li><strong>Design:</strong> Dimensions of 164.2 x 74.7 x 8.8 mm, weighing 210 g, featuring dual Nano-SIM capability.</li>
-        <li><strong>Display:</strong> A vibrant 6.78 inches AMOLED screen with 120Hz refresh rate and HDR10+.</li>
-        <li><strong>Performance:</strong> Mediatek Dimensity 7050, 256GB internal storage, and 8GB RAM.</li>
-        <li><strong>Camera:</strong> Quad-camera setup with a powerful 50 MP main sensor, and a 16 MP front camera.</li>
-        <li><strong>Battery:</strong> A robust 4700 mAh non-removable battery with 66W wired charging.</li>
-        <li><a className='amazon-link' href='https://amzn.to/42cQVbT' alt="" target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
-      </ul>
-      </div>
-      <div id='POCO X5 Pro' className="smartphone-card">
-            <h2>POCO X5 Pro</h2>  
-      <ul>
-        <li><strong>Debut:</strong> Released on February 7, 2023.</li>
-        <li><strong>Design:</strong> Dimensions of 162.9 x 76 x 7.9 mm, weighing 181 g, featuring Gorilla Glass 5, and IP53 protection.</li>
-        <li><strong>Display:</strong> A stunning 6.67 inches AMOLED screen with 120Hz refresh rate, Dolby Vision, and HDR10+.</li>
-        <li><strong>Performance:</strong> Snapdragon 778G 5G, with options for 128GB/6GB RAM or 256GB/8GB RAM.</li>
-        <li><strong>Camera:</strong> Triple-camera setup with a high-resolution 108 MP main sensor, and a 16 MP front camera.</li>
-              <li><strong>Battery:</strong> A substantial 5000 mAh non-removable battery with 67W wired charging and 5W reverse wired charging.</li>
-              <li><a className='amazon-link' href='https://amzn.to/3vPy1f4' alt="" target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
-      </ul>
-      </div>
-        
-       <div id='Samsung Galaxy M34' className="smartphone-card">
-            <h2>Samsung Galaxy M34</h2>
-        
-      <ul>
-        <li><strong>Debut:</strong> Released on July 15, 2023.</li>
-        <li><strong>Design:</strong> Dimensions of 161.7 x 77.2 x 8.8 mm, weighing 208 g, featuring Hybrid Dual SIM, and Corning Gorilla Glass 5 protection.</li>
-        <li><strong>Display:</strong> 6.5 inches Super AMOLED with a swift 120Hz refresh rate.</li>
-        <li><strong>Performance:</strong> Powered by Exynos 1280, available in 128GB/6GB RAM or 128GB/8GB RAM configurations.</li>
-        <li><strong>Camera:</strong> Triple-camera setup with a 50 MP main sensor, and a 13 MP front camera.</li>
-              <li><strong>Battery:</strong> A robust 6000 mAh non-removable battery with 25W wired charging.</li>
-              <li><a className='amazon-link' href='https://amzn.to/3ujOiIF' alt="" target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
-      </ul>
-      </div>
-      <div id='Realme Narzo 60x' className="smartphone-card">
-            <h2>Realme Narzo 60x</h2>
-           
-      <ul>
-       
-        <li><strong>Debut:</strong>Released on September 12, 2023.</li>
-        <li><strong>Design:</strong> Dimensions of 165.7 x 76 x 7.9 mm, weighing 190 g, with a dual SIM setup.</li>
-        <li><strong>Display:</strong> 6.72 inches IPS LCD with a responsive 120Hz refresh rate.</li>
-        <li><strong>Performance:</strong> MediaTek Dimensity 6100+, available in 128GB/4GB RAM or 128GB/6GB RAM configurations.</li>
-        <li><strong>Camera:</strong> Dual-camera setup with a 50 MP main sensor, and an 8 MP front camera.</li>
-              <li><strong>Battery:</strong> A sturdy 5000 mAh non-removable battery with 33W wired charging.</li>
-              <li><a className='amazon-link' href='https://amzn.to/42hB5gj' alt="" target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
-      </ul>
-          </div>
-          <div id='OnePlus Nord CE 3 Lite' className="smartphone-card">
-            <h2>OnePlus Nord CE 3 Lite</h2>
-           
-      <ul>
-      
-        <li><strong>Debut:</strong> Released on  April 11, 2023.</li>
-        <li><strong>Design:</strong> Dimensions of 165.5 x 76 x 8.3 mm , weighing 195 g, with a dual SIM setup.</li>
-        <li><strong>Display:</strong> 6.72 inches IPS LCD with a responsive 120Hz refresh rate.</li>
-        <li><strong>Performance:</strong>snapdragon 695, available in 128GB/8GB RAM or 256GB/8GB RAM configurations.</li>
-        <li><strong>Camera:</strong> 108 MP main sensor,2MP micro,2MP depth and an 16 MP front camera.</li>
-              <li><strong>Battery:</strong> A sturdy 5000 mAh non-removable battery with 33W wired charging.</li>
-              <li><a className='amazon-link' href='https://amzn.to/3HFI2xS' alt="" target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
-      </ul>
-          </div>  
+      <center><h2 id='Best 5G Mobile under Rs 20,000'><strong>Best 5G Mobile under Rs 20,000</strong></h2></center>  
+<h2>1) LAVA Agni 2</h2>
+<div id='LAVA Agni 2' className="smartphone-card">
+  <ul>
+    <li><strong>Debut:</strong> Released on May 24, 2023.</li>
+    <li><strong>Design:</strong> Dimensions of 164.2 x 74.7 x 8.8 mm, weighing 210 g, featuring dual Nano-SIM capability.</li>
+    <li><strong>Display:</strong> A vibrant 6.78 inches AMOLED screen with 120Hz refresh rate and HDR10+.</li>
+    <li><strong>Performance:</strong> Mediatek Dimensity 7050, 256GB internal storage, and 8GB RAM.</li>
+    <li><strong>Camera:</strong> Quad-camera setup with a powerful 50 MP main sensor, and a 16 MP front camera.</li>
+    <li><strong>Battery:</strong> A robust 4700 mAh non-removable battery with 66W wired charging.</li>
+    <li><a className='amazon-link' href='https://amzn.to/4bNUcmx' target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
+      <a className='amazon-link' href='https://amzn.to/4bNUcmx' target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://m.media-amazon.com/images/I/61OBw+XUiuL._SX679_.jpg"
+          alt=""
+          className="amazon-image"
+        /> 
+      </a>
+    
+  </ul>
+</div>
+<h2>2) POCO X5 Pro</h2> 
+<div id='POCO X5 Pro' className="smartphone-card">
+
+  <ul>
+    <li><strong>Debut:</strong> Released on February 7, 2023.</li>
+    <li><strong>Design:</strong> Dimensions of 162.9 x 76 x 7.9 mm, weighing 181 g, featuring Gorilla Glass 5, and IP53 protection.</li>
+    <li><strong>Display:</strong> A stunning 6.67 inches AMOLED screen with 120Hz refresh rate, Dolby Vision, and HDR10+.</li>
+    <li><strong>Performance:</strong> Snapdragon 778G 5G, with options for 128GB/6GB RAM or 256GB/8GB RAM.</li>
+    <li><strong>Camera:</strong> Triple-camera setup with a high-resolution 108 MP main sensor, and a 16 MP front camera.</li>
+    <li><strong>Battery:</strong> A substantial 5000 mAh non-removable battery with 67W wired charging and 5W reverse wired charging.</li>
+    <li><a className='amazon-link' href='https://amzn.to/3UVqmpU' target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
+    <a className='amazon-link' href='https://amzn.to/3UVqmpU' target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://m.media-amazon.com/images/I/51QtB4LJzlL._SY879_.jpg"
+        alt=""
+        className="amazon-image"
+      /> 
+    </a>
+    
+  </ul>
+</div>
+<h2>3) Samsung Galaxy M34</h2>
+<div id='Samsung Galaxy M34' class="smartphone-card">
+  <ul>
+    <li><strong>Debut:</strong> Released on July 15, 2023.</li>
+    <li><strong>Design:</strong> Dimensions of 161.7 x 77.2 x 8.8 mm, weighing 208 g, featuring Hybrid Dual SIM, and Corning Gorilla Glass 5 protection.</li>
+    <li><strong>Display:</strong> 6.5 inches Super AMOLED with a swift 120Hz refresh rate.</li>
+    <li><strong>Performance:</strong> Powered by Exynos 1280, available in 128GB/6GB RAM or 128GB/8GB RAM configurations.</li>
+    <li><strong>Camera:</strong> Triple-camera setup with a 50 MP main sensor, and a 13 MP front camera.</li>
+    <li><strong>Battery:</strong> A robust 6000 mAh non-removable battery with 25W wired charging.</li>
+    <li><a class='amazon-link' href='https://amzn.to/3SYb3Kw' target="_blank" rel="noopener noreferrer">Visit Amazon</a> </li>
+      <a class='amazon-link' href='https://amzn.to/3SYb3Kw' target="_blank" rel="noopener noreferrer">
+        <img
+          src="https://m.media-amazon.com/images/I/51Evhl1pUdL._SX300_SY300_QL70_FMwebp_.jpg"
+          alt=""
+          class="amazon-image"
+        /> 
+      </a>
+   
+  </ul>
+</div>
+<h2>4) Realme Narzo 60x</h2>
+<div id='Realme Narzo 60x' class="smartphone-card">
+  <ul>
+    <li><strong>Debut:</strong> Released on September 12, 2023.</li>
+    <li><strong>Design:</strong> Dimensions of 165.7 x 76 x 7.9 mm, weighing 190 g, with a dual SIM setup.</li>
+    <li><strong>Display:</strong> 6.72 inches IPS LCD with a responsive 120Hz refresh rate.</li>
+    <li><strong>Performance:</strong> MediaTek Dimensity 6100+, available in 128GB/4GB RAM or 128GB/6GB RAM configurations.</li>
+    <li><strong>Camera:</strong> Dual-camera setup with a 50 MP main sensor, and an 8 MP front camera.</li>
+    <li><strong>Battery:</strong> A sturdy 5000 mAh non-removable battery with 33W wired charging.</li>
+    <li><a class='amazon-link' href='https://amzn.to/3uO5Ehg' target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
+    <a class='amazon-link' href='https://amzn.to/3uO5Ehg' target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://m.media-amazon.com/images/I/41tSQSq1xJL._SX300_SY300_QL70_FMwebp_.jpg"
+        alt=""
+        class="amazon-image"
+      />
+    </a>
+  </ul>
+</div>
+<h2>5) OnePlus Nord CE 3 Lite</h2>
+<div id='OnePlus Nord CE 3 Lite' class="smartphone-card">
+  <ul>
+    <li><strong>Debut:</strong> Released on April 11, 2023.</li>
+    <li><strong>Design:</strong> Dimensions of 165.5 x 76 x 8.3 mm, weighing 195 g, with a dual SIM setup.</li>
+    <li><strong>Display:</strong> 6.72 inches IPS LCD with a responsive 120Hz refresh rate.</li>
+    <li><strong>Performance:</strong> Snapdragon 695, available in 128GB/8GB RAM or 256GB/8GB RAM configurations.</li>
+    <li><strong>Camera:</strong> 108 MP main sensor, 2MP micro, 2MP depth, and a 16 MP front camera.</li>
+    <li><strong>Battery:</strong> A sturdy 5000 mAh non-removable battery with 33W wired charging.</li>
+    <li><a class='amazon-link' href='https://amzn.to/48BfWPz' target="_blank" rel="noopener noreferrer">Visit Amazon</a></li>
+    <a class='amazon-link' href='https://amzn.to/48BfWPz' target="_blank" rel="noopener noreferrer">
+      <img
+        src="https://images-na.ssl-images-amazon.com/images/I/41NOKPCVM7L._SX300_SY300_QL70_FMwebp_.jpg"
+        alt=""
+        class="amazon-image"
+      />
+    </a>
+  </ul>
+</div>
           
       <div id='comparison_table' className="comparison-table">
       <table className="comparsionmobile">

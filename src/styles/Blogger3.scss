@@ -1,3 +1,34 @@
+.smartphone-card {
+    display: flex;
+    align-items: flex-start; // Align items at the start of the container (top)
+  
+    h2 {
+      margin-right: 20px; // Add margin to separate heading from details
+    }
+  
+    ul {
+      // Styling for the list containing details
+      list-style-type: none;
+      padding: 0;
+  
+      li {
+        margin-bottom: 10px; // Adjust as needed
+      }
+  
+      .amazon-link {
+        // Styling for the Amazon link
+        text-decoration: none;
+        color: #007bff; // Set the color you want for the link
+      }
+    }
+  
+    img.amazon-image {
+        width: 200px;
+      height: auto;
+    }
+  }
+  
+  
 .comparsionmobile {
     width: 100%;
     border-collapse: collapse;

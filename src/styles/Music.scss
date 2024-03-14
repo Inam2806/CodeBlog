@@ -1,0 +1,78 @@
+// music.scss
+
+$primaryColor: #3498db;
+$secondaryColor: #2ecc71;
+
+.Music {
+    padding: 20px;
+    text-align: center;
+
+    input {
+        width: 60%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .song {
+        width: 300px;
+        margin: 10px;
+        padding: 15px;
+        background-color: #ecf0f1;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: left;
+
+        img {
+            width: 100%;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            button {
+                background-color: $primaryColor;
+                color: #fff;
+                padding: 8px 12px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $secondaryColor;
+                }
+            }
+        }
+
+        input[type='range'] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            background-color: $primaryColor;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+
+            &:hover {
+                background-color: $secondaryColor;
+            }
+        }
+    }
+}
