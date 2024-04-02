@@ -3,36 +3,37 @@
     margin-top: 20px;
     color: #fff;
     padding: 20px 0;
-    @media (max-width: 768px) {
-        padding: 15px 0; // Adjust padding for smaller screens
-    }
-}
+    position: relative;
+    overflow: hidden;
+  }
 
-/* Styles for the footer container */
-.footer-container_1 {
+  .footer-container_1 {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
 
     @media (max-width: 768px) {
-        flex-direction: column; // Stack items vertically on smaller screens
-        text-align: center; // Center-align content
+      flex-direction: column;
+      text-align: center;
     }
-}
+  }
 
-/* Styles for footer buttons */
-.footer-buttons_1 {
+  .footer-buttons_1 {
     display: flex;
     gap: 10px;
+    animation: fade-in 1s forwards;
+    animation-delay: 0.5s;
 
     @media (max-width: 768px) {
-        margin-top: 10px; // Add some space between buttons on smaller screens
+      margin-top: 10px;
     }
-}
+  }
 
-.black-button_1 {
+  .black-button_1 {
     background: #2a2a2a;
     color: #fff;
     padding: 10px 15px;
@@ -42,52 +43,54 @@
     transition: background-color 0.3s;
 
     @media (max-width: 768px) {
-        width: 100%; // Make buttons full width on smaller screens
+      width: 100%;
     }
-}
+  }
 
-.black-button_1:hover {
+  .black-button_1:hover {
     background: #333;
-}
+  }
 
-/* Styles for social media icons */
-.social-media_1 {
+  .social-media_1 {
     display: inline-flex;
     gap: 10px;
+    animation: fade-in 1s forwards;
+    animation-delay: 1s;
 
     @media (max-width: 768px) {
-        margin-top: 10px; // Add some space between social media icons on smaller screens
+      margin-top: 10px;
     }
-}
+  }
 
-.social-media_1 a {
+  .social-media_1 a {
     text-decoration: none;
     font-size: 20px;
     color: #fff;
     transition: color 0.3s;
-}
+  }
 
-.social-media_1 a:hover {
+  .social-media_1 a:hover {
     color: #00bcd4;
-}
+  }
 
-/* Styles for copyright text */
-.copyright_1 {
+  .copyright_1 {
     text-align: center;
     font-size: 14px;
+    animation: fade-in 1s forwards;
+    animation-delay: 1.5s;
 
     @media (max-width: 768px) {
-        margin-top: 10px; // Add some space between copyright text on smaller screens
+      margin-top: 10px;
     }
-}
-@media (max-width: 767px) {
-    .footer-container_1 {
-        flex-direction: column;
-        text-align: center;
-    }
+  }
 
-    .footer-buttons_1,
-    .social-media_1 {
-        margin-top: 10px;
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
     }
-}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

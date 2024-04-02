@@ -26,7 +26,7 @@ const Blogger1 = () => {
   
   return (
     <div className='main_blog'>
-      <section className="blogpost1 scrollable-section">
+      <section className="">
        
         {enableScrollEffect && <ScrollEffect1 targetSection=".blogpost1" />}
        

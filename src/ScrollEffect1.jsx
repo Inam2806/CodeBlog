@@ -8,8 +8,8 @@ const YourComponent = () => {
   useEffect(() => {
     if (window.innerWidth > 1100) {
       $(function () {
-        var rightSection = $('.right-section-1');
-        var scrollableSection = $('.blogpost1');
+        const rightSection = $('.right-section-1');
+        const scrollableSection = $('.blogpost1');
         const speedFactor = 0.05; // Adjust this value to control the speed
 
         // Apply initial styles when the document is ready
@@ -17,10 +17,13 @@ const YourComponent = () => {
           // Add your initial styles here
         });
 
-        // Use .on() to handle the scroll event
+        // Move the scroll event listener inside the DOM ready function
         $(window).on('scroll', function () {
           var scroll = $(window).scrollTop();
-          var sectionOffset = scrollableSection.offset().top;
+          var sectionOffset = scrollableSection.offset()?.top;
+          if (sectionOffset === undefined) {
+            return;
+          }
           var sectionHeight = scrollableSection.outerHeight();
 
           // Calculate the relative scroll position within the section
@@ -59,7 +62,7 @@ const YourComponent = () => {
           </div>
         </div>
       )}
-    </div>  
+    </div>
   );
 };
 
