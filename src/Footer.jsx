@@ -4,7 +4,7 @@ import React from 'react';
 import './styles/Footer.scss'; // Add the appropriate style file
 import { Link } from 'react-router-dom';
 
-const Footer = ({ isFooterVisible }) => {
+const Footer = () => {
   const scrollToTop = () => {
   window.scrollTo(0, 0);
   };

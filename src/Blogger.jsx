@@ -266,25 +266,7 @@ const Blogger = () => {
       </div>
     ))}
   </div>
-        {/* </div>
-        <div className='Website-section'>
-           <center><h2><strong>Movies</strong></h2></center>
 
-  <div className='article-card-container recommendations-container'>
-    {Website.map((article, index) => (
-      <div key={index} className='article-card-rec'>
-        <img src={article.image} alt={article.title} />
-        <h3>
-          <center>
-            <strong>{article.title}</strong>
-          </center>
-        </h3>
-        <Link to={article.link} onClick={scrollToTop} rel='noopener noreferrer'>
-          Read more
-        </Link>
-      </div>
-    ))}
-  </div> */}
 </div>
       </div>
 
